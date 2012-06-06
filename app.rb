@@ -3,7 +3,6 @@ class App < Sinatra::Base
   helpers  ViewHelpers
 
   get '/' do
-    cache_control :public, :max_age => 36000
     erb :about
   end
 
@@ -32,10 +31,5 @@ class App < Sinatra::Base
 
   %w[projects books movies].each do |route|
     get("/#{route}") { redirect to '/' }
-  end
-
-  def set_cache_control(max_age)
-    max_age ||= 600
-    request['Cache-Control'] = "public, max-age=#{max_age}"
   end
 end
