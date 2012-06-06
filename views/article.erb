@@ -1,0 +1,23 @@
+<article>
+  <header>
+    <p class="title">
+      <%= @article.title %>
+    </p>
+
+    <p class="publish-date">
+      <%= published_at @article.lang %>&nbsp;<%= @article.date %>
+    </p>
+
+    <% if @article.spanish_version %>
+      <a href="<%= article_path(@article.spanish_version) %>" class="fancy-pants">Leer versi&oacute;n en Espa&ntilde;ol</a>
+    <% elsif @article.english_version %>
+      <a href="<%= article_path(@article.english_version) %>" class="fancy-pants">Read English version</a>
+    <% end %>
+  </header>
+
+  <%= @article.content %>
+</article>
+
+<script type="text/javascript" src="/javascripts/article.js"></script>
+<%= erb :hljs %>
+<%= erb :disqus %>

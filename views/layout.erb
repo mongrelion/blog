@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Mongrelion &copy; 2012</title>
+    <link href="/images/avatar.png" rel="icon" type="image/png" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/mongrelion.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <!-- Sidebar section -->
+    <section id="sidebar">
+      <a href="/"><img class="avatar" src="/images/avatar.png" /></a>
+      <h1>mongrelion</h1>
+      <ul class="menu">
+        <li><a href="/articles">&#10004;Articles</a></li>
+        <li><a href="/projects">&#10004;Projects</a></li>
+        <li><a href="/books">&#10004;Books</a></li>
+        <li><a href="/movies">&#10004;Movies</a></li>
+        <li><a href="http://gallery.carlosleon.info">&#10004;Photos</a></li>
+      </ul>
+      <h3>I'm social</h3>
+      <ul class="social">
+        <li><a href="http://twitter.com/mongrelion">&#9733;Twitter</a></li>
+        <li><a href="http://github.com/mongrelion">&#9733;Github</a></li>
+        <li><a href="http://stackoverflow.com/users/1415508/mongrelion">&#9733;Stackoverflow</a></li>
+        <li><a href="http://last.fm/user/mongrelion">&#9733;Last.fm</a></li>
+      </ul>
+    </section>
+
+    <!-- Main content section -->
+    <section id="content">
+      <%= yield %>
+    </section>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32111714-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

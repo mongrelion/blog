@@ -1,0 +1,37 @@
+# - :title: Backbone.js best practices for n00bs
+#   :date: 2012-05-31
+#   :file: 'backbone-js-best-practices-for-n00bs.markdown'
+#   :tags: "js, javascript, backbone, backbonejs, backbone.js, coffeescript"
+#   :intro: |
+#     The other day I was looking for some Backbone.js tutorials on the internetz,
+#     something that could give me some clue about how to properly structure a web
+#     application using this framework and I found a not that old (one year and a half now)
+#     blog post talking about how to do a trivial Backbone.js application.
+
+- :title: Method stub with MiniTest
+  :date: 2012-05-24
+  :file: 'method-stub-with-minitest.markdown'
+  :lang: english
+  :spanish_version: 'stub-de-metodos-con-minitest'
+  :tags: "ruby, test, testing, minitest"
+  :intro: |
+    MiniTest is a testing tool that provides the necessary resources to make your
+    test suite a complete stack, supporting TDD, BDD, mocking and benchmarking. It
+    comes by default with Ruby 1.9.x and is also available for Ruby 1.8.7.
+    In this post I show you how to stub methods using some Ruby hacking and
+    using MiniTest built-in tools.
+
+- :title: Stub de métodos con MiniTest
+  :date: 2012-05-24
+  :file: 'stub-de-metodos-con-minitest.markdown'
+  :lang: spanish
+  :english_version: 'method-stub-with-minitest'
+  :tags: "ruby, test, testing, minitest"
+  :intro: |
+    MiniTest es una herramienta para pruebas que viene con todos los juguetes
+    necesarios para nuestro conjunto de pruebas (unitarias, de integración, etc),
+    soportando TDD, BDD, mocking y benchmarking. Viene por defecto con Ruby 1.9.x
+    y también está disponible para Ruby 1.8.x.
+    En este post mostraré como hacer stub de métodos hackeando un poco nuestro
+    código con Ruby puro y luego usando las herramientas que vienen incluídas
+    en MiniTest.

@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url(/images/pattern.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+pre {
+  max-width: 600px;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+pre code {
+  border-radius: 20px;
+}
+
+a, a:visited, a:active {
+  color: #999;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 600;
+}
+
+section#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 220px;
+  height: 100%;
+  border-right: 1px solid #E2E2E2;
+  padding: 20px 15px 0 15px;
+}
+
+section#sidebar h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+section#sidebar h3 {
+  padding-left: 10px;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section#sidebar ul {
+  padding-left: 20px;
+}
+
+section#sidebar ul li {
+  list-style-type: none;
+  margin-bottom: 2px;
+}
+
+section#sidebar img.avatar {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+section#sidebar a {
+  font-family: 'Lobster', sans-serif;
+  font-size: 20px;
+  color: #999;
+  text-decoration: none;
+}
+
+section#sidebar a:hover {
+  text-decoration: underline;
+}
+
+section#content {
+  margin-left: 280px;
+  padding-top: 30px;
+  padding-left: 10px;
+  max-width: 610px;
+}
+
+section#content p.lang-links {
+  font-size: 15px;
+}
+
+article {
+  font: 300 15px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 25px;
+  padding: 40px 0 40px 0;
+  border-bottom: 1px solid #E2E2E2;
+  width: 100%;
+}
+
+article header p, article header p a {
+  margin: 0;
+  color: #000;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+}
+
+article header p.title,
+article header p.title a {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+
+article header p.publish-date {
+  color: #999;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+article p {
+  color: #4D4D4D;
+  max-width: 600px;
+}
+
+article a.read-more {
+  color: inherit;
+  float: right;
+}
+
+.fancy-pants {
+  font-family: 'Lobster', cursive;
+}
+
+.hidden {
+  display: none;
+}
