@@ -7,6 +7,6 @@ require 'ostruct'
 require './lib/view_helpers'
 require './lib/ext/kernel'
 require './models/article'
-require './mongreliog'
+require './app'
 
-run Mongreliog
+run App

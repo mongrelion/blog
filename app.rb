@@ -1,4 +1,4 @@
-class Mongreliog < Sinatra::Base
+class App < Sinatra::Base
   register Sinatra::Synchrony
   helpers  ViewHelpers
 
