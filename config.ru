@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra/base'
-require 'sinatra/synchrony'
 require 'rdiscount'
 require 'yaml'
 require 'ostruct'
