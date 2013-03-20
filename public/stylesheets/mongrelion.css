@@ -139,3 +139,31 @@ article a.read-more {
 .hidden {
   display: none;
 }
+
+/* From TwitterBootstrap: https://twitter.github.com/bootstrap */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+div.readings article header p.title {
+  float: left;
+  margin-right: 10px;
+}
+
+div.readings article header p.publish-date {
+  padding-top: 3px;
+}

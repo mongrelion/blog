@@ -1,0 +1,18 @@
+<div class="readings">
+  <% @readings.each do |reading| %>
+    <article>
+      <header>
+        <p class="title">
+          <a href="<%= reading.url %>"><%= reading.title %></a>
+        </p>
+        <p class="publish-date">
+          <%= reading.author %>
+        </p>
+        <small><i>Status: <%= reading.status %></i></small>
+      </header>
+      <p>
+        <%= reading.opinion %>
+      </p>
+    </article>
+  <% end %>
+</div>
