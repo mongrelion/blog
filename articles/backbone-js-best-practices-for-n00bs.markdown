@@ -9,21 +9,21 @@ but the man had got his point.
 Even though the [Backbone.js] 's official [documentation] says that
 [There's More Than One Way To Do It], I do agree with something that [Yehuda Katz]
 said at the [Railsconf 2012] about [Rails: The Next Five Years], and it's that
-convention rules. I think it is really cool that [Backbone.js] let you do things
-the way you see them fit, but I think it is the author's responsibility to spread
-the world about, at least, common practices, so that we don't end up with something
-like we currently have, which is a lot of people trying to figure out what's
-the best approach for solving certain problems, then debating, arguing, flaming,
-trolling, bitching, etc. If you don't believe me, ask for projects like [Git],
-[Ruby], [Ruby On Rails] and [Linux], where there is a "dictator" and people
-just follow rules. You don't really need to agree with this. It's just my
-personal opinion.
+convention over configuration rules. I think it is really cool that [Backbone.js]
+let you do things the way you see them fit, but I think it is the author's
+responsibility to spread the world about, at least, common practices, so that we
+don't end up with something like we currently have, which is a lot of people
+trying to figure out what's the best approach for solving certain problems,
+then debating, arguing, flaming, trolling, bitching, etc. If you don't believe
+me, ask for projects like [Git], [Ruby], [Ruby On Rails] and [Linux], where
+there is a "dictator" and people just follow rules. You don't really need to
+agree with this. It's just my personal opinion.
 
 I want to say that by the time this application saw the light, [Backbone.js]
 was on its version 0.3.3.
-Now it is has been a year since that example was created and I want to show you
-what are the changes that I made to update it, and then I'm going to show you
-how I re-organized the code to make it more readable and understandable.
+Now it is has been a year since that example was created and I want you to check
+the source code posted on that blog and check my version on [GitHub](http://github.com/mongrelion/rafflerjs)
+to see what's the difference.
 
 Anyways, I have to say that before I read this [blog post] that I'm talking about,
 I had already watched [Backbone on Rails Part 1] and [Backbone on Rails Part 2]

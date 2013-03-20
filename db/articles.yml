@@ -1,12 +1,23 @@
-# - :title: Backbone.js best practices for n00bs
-#   :date: 2012-05-31
-#   :file: 'backbone-js-best-practices-for-n00bs.markdown'
-#   :tags: "js, javascript, backbone, backbonejs, backbone.js, coffeescript"
+- :title: Backbone.js best practices for n00bs
+  :date: 2012-05-31
+  :file: 'backbone-js-best-practices-for-n00bs.markdown'
+  :tags: "js, javascript, backbone, backbonejs, backbone.js, coffeescript"
+  :intro: |
+    The other day I was looking for some Backbone.js tutorials on the internetz,
+    something that could give me some clue about how to properly structure a web
+    application using this framework and I found a not that old (one year and a half now)
+    blog post talking about how to do a trivial Backbone.js application.
+
+# - :title: Pagination with Backbone.js and Rails
+#   :date: 2012-08-07
+#   :file: 'pagination-with-backbonejs.markdown'
+#   :lang: english
+#   #:spanish_version: 'paginacion-con-backbonejs'
+#   :tags: "javascript, js, coffeescript, coffee script, backbone, backbonejs, pagination"
 #   :intro: |
-#     The other day I was looking for some Backbone.js tutorials on the internetz,
-#     something that could give me some clue about how to properly structure a web
-#     application using this framework and I found a not that old (one year and a half now)
-#     blog post talking about how to do a trivial Backbone.js application.
+#     You have pagination in your Rails site using WillPaginate or Kaminari.
+#     You are now using Backbone and you want that pagination to dance AJAX.
+#     In this guide I will show you the steps so you can rock the party!
 
 - :title: Method stub with MiniTest
   :date: 2012-05-24
