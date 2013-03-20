@@ -28,7 +28,12 @@ class App < Sinatra::Base
     end
   end
 
-  %w[projects books movies].each do |route|
+  get '/readings' do
+    @readings = Reading.all
+    erb :readings
+  end
+
+  %w[projects movies].each do |route|
     get("/#{route}") { redirect to '/' }
   end
 end
