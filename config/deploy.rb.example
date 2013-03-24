@@ -1,0 +1,52 @@
+require 'mina/git'
+require 'mina/rbenv'
+require './config/recipes/rbenv'
+require './config/recipes/puma'
+
+set :domain,     'carlosleon.info'
+set :deploy_to,  '/root'
+set :repository, 'https://github.com/mongrelion/carlosleon.info.git'
+set :branch,     'master'
+
+# - Puma Configuration Variables - #
+set :puma_version,          '2.0.0.b7'
+set :puma_config_file_path, "#{deploy_to}/#{shared_path}/config/puma.rb"
+set :puma_bind_address,     'tcp://127.0.0.1:9292'
+set :puma_min_threads,      0
+set :puma_max_threads,      16
+
+# Manually create these paths in shared/ (eg: shared/config/puma.rb) in the server.
+# They will be linked in the 'deploy:link_shared_paths' step.
+set :shared_paths, ['config/puma.rb', 'log', 'pids']
+
+set :user, 'deploy' # Username in the server to SSH to.
+
+task :environment do
+  invoke :'rbenv:load'
+end
+
+task setup: :environment do
+  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/tmp/pids"]
+  queue! %[chmod -R g+rx,u+rwx "#{deploy_to}/#{shared_path}/tmp"]
+
+  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
+  queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
+
+  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/config"]
+  queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/config"]
+
+  invoke :'puma:install'
+end
+
+desc "Deploys the current version to the server."
+task deploy: :environment do
+  deploy do
+    invoke :'git:clone'
+    invoke :'puma:config'
+    invoke :'deploy:link_shared_paths'
+
+    to :launch do
+      invoke :'puma:start'
+    end
+  end
+end
