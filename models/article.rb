@@ -9,25 +9,31 @@ class Article < OpenStruct
   # - english_version [might not be present always]
 
   # - Instance Methods - #
+  def initialize(args)
+    super args
+    self.content
+    self
+  end
+
   def content
     if file
-      RDiscount.new(File.read File.join(root, 'articles', file)).to_html
+      @content ||= RDiscount.new(File.read File.join(root, 'articles', file)).to_html
     end
   end
 
   def slug
-    file.match(/^(.+).markdown$/)[1] if file
+    @slug ||= file.match(/^(.+).markdown$/)[1] if file
   end
 
   def spanish?
-    lang.eql? 'spanish'
+    @spanish ||= lang.eql? 'spanish'
   end
 
   # - Class Methods - #
   class << self
-
+    attr_accessor :all
     def all
-      YAML.load_file(db_path).map { |article| new article }
+      @all ||= YAML.load_file(db_path).map { |article| new article }
     end
 
     def spanish

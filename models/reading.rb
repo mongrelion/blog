@@ -8,8 +8,9 @@ class Reading < OpenStruct
 
   # - Class Methods - #
   class << self
+    attr_reader :all
     def all
-      YAML.load_file(db_path).map { |reading| new reading }
+      @all ||= YAML.load_file(db_path).map { |reading| new reading }
     end
 
     protected
