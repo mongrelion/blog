@@ -1,3 +1,17 @@
+- :title: Improving (?) my site's performance Part I
+  :date: 2013-03-24
+  :lang: english
+  :file: 'improving-my-sites-performance.markdown'
+  :tags: 'ruby'
+  :intro: |
+    When I decided to finally come up with a blog, I gave Jekyll and Octopress
+    a try. Nice plugins, "easy" deployment strategies and what not, but somehow
+    I could not cope with them. That's why I decided to write my own. At last I
+    am a software developer and building a semi-static website shouldn't be that
+    complicated.
+    The solution I came up with is inspired by @cyx personal website, although
+    now I seriously am thinking about refactoring a couple stuff here and there.
+
 - :title: Backbone.js best practices for n00bs
   :date: 2012-05-31
   :lang: english
