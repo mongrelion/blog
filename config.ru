@@ -9,5 +9,8 @@ require './models/article'
 require './models/reading'
 require './app'
 
-# TODO: Preload articles and readings
+# Preload articles and readings
+Article.all
+Reading.all
+
 run App
