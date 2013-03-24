@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="futbol5">
   <head>
+    <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>Mongrelion &copy; 2012</title>
     <link href="/images/avatar.png" rel="icon" type="image/png" />
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
-    <link href='/stylesheets/mongrelion.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/mongrelion.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
-    <!-- Sidebar section -->
-    <section id="sidebar">
-      <a href="/"><img class="avatar" src="/images/avatar.png" /></a>
-      <h1>mongrelion</h1>
-      <ul class="menu">
-        <li><a href="/articles">&#10004;Articles</a></li>
-        <li><a href="/projects">&#10004;Projects</a></li>
-        <li><a href="/readings">&#10004;Readings</a></li>
-        <li><a href="/movies">&#10004;Movies</a></li>
-        <li><a href="http://flickr.com/photos/mongrelion">&#10004;Photos</a></li>
-      </ul>
-      <h3>I'm social</h3>
-      <ul class="social">
-        <li><a href="http://twitter.com/mongrelion">&#9733;Twitter</a></li>
-        <li><a href="http://github.com/mongrelion">&#9733;Github</a></li>
-        <li><a href="http://stackoverflow.com/users/1415508/mongrelion">&#9733;Stackoverflow</a></li>
-        <li><a href="http://last.fm/user/mongrelion">&#9733;Last.fm</a></li>
-      </ul>
-    </section>
+    <!-- menu -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Carlos Le&oacute;n</a>
+          <ul class="nav">
+            <li><a href="/articles">&#9733;&nbsp;Articles</a></li>
+            <li><a href="/projects">&#9733;&nbsp;Projects</a></li>
+            <li><a href="/readings">&#9733;&nbsp;Readings</a></li>
+            <li><a href="/movies">&#9733;&nbsp;Movies</a></li>
+            <li><a href="http://flickr.com/photos/mongrelion">&#9733;&nbsp;Photos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end menu -->
 
-    <!-- Main content section -->
-    <section id="content">
-      <%= yield %>
-    </section>
+    <!-- container -->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 fancy-border">
+          <!-- Sidebar Content -->
+          <ul class="unstyled social">
+            <li><a class="btn btn-primary span12" href="http://twitter.com/mongrelion">Twitter</a></li>
+            <li><a class="btn btn-success span12" href="http://github.com/mongrelion">Github</a></li>
+            <li><a class="btn span12" href="http://stackoverflow.com/users/1415508/mongrelion">Stackoverflow</a></li>
+            <li><a class="btn btn-danger span12" href="http://last.fm/user/mongrelion">Last.fm</a></li>
+          </ul>
+        </div>
 
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-32111714-1']);
-      _gaq.push(['_trackPageview']);
+        <div class="span9">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    <!-- javascripts -->
+    <%= erb :google_analytics %>
   </body>
 </html>

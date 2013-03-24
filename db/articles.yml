@@ -1,5 +1,6 @@
 - :title: Backbone.js best practices for n00bs
   :date: 2012-05-31
+  :lang: english
   :file: 'backbone-js-best-practices-for-n00bs.markdown'
   :tags: "js, javascript, backbone, backbonejs, backbone.js, coffeescript"
   :intro: |
@@ -21,8 +22,8 @@
 
 - :title: Method stub with MiniTest
   :date: 2012-05-24
-  :file: 'method-stub-with-minitest.markdown'
   :lang: english
+  :file: 'method-stub-with-minitest.markdown'
   :spanish_version: 'stub-de-metodos-con-minitest'
   :tags: "ruby, test, testing, minitest"
   :intro: |
