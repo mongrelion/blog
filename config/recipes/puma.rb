@@ -3,7 +3,7 @@ task :'puma:config' do
   full_current_path = "#{deploy_to}/#{current_path}"
   full_shared_path  = "#{deploy_to}/#{shared_path}"
   config = %{
-    environment     'production'
+    environment     "production"
     daemonize       true
     directory       "#{full_current_path}"
     rackup          "#{full_current_path}/config.ru"
