@@ -59,7 +59,7 @@ task deploy: :environment do
     invoke :'deploy:link_shared_paths'
 
     to :launch do
-      invoke :'puma:start'
+      invoke :'puma:restart'
     end
   end
 end
