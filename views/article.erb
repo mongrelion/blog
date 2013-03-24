@@ -1,21 +1,23 @@
-<article>
+<article class="fancy-border">
   <header>
-    <p class="title">
+    <h1>
       <%= @article.title %>
-    </p>
+    </h1>
 
-    <p class="publish-date">
-      <%= published_at @article.lang %>&nbsp;<%= @article.date %>
+    <p class="muted">
+      <small>
+        <%= published_at @article.lang %>&nbsp;<%= @article.date %>
+      </small>
     </p>
 
     <% if @article.spanish_version %>
-      <a href="<%= article_path(@article.spanish_version) %>" class="fancy-pants">Leer versi&oacute;n en Espa&ntilde;ol</a>
+      <a href="<%= article_path(@article.spanish_version) %>" class="btn btn-inverse">Leer versi&oacute;n en Espa&ntilde;ol</a>
     <% elsif @article.english_version %>
-      <a href="<%= article_path(@article.english_version) %>" class="fancy-pants">Read English version</a>
+      <a href="<%= article_path(@article.english_version) %>" class="btn btn-inverse">Read English version</a>
     <% end %>
   </header>
-
-  <%= @article.content %>
+  <hr />
+  <p><%= @article.content %></p>
 </article>
 
 <script type="text/javascript" src="/javascripts/article.js"></script>

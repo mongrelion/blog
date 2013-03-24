@@ -1,26 +1,20 @@
-<p class="lang-links">
-  <a href="/articles/en" class="fancy-pants">Articles in English</a>
-  |
-  <a href="/articles/es" class="fancy-pants">Art&iacute;culos en Espa&ntilde;ol</a>
+<p>
+  <a href="/articles/en" class="btn">Articles in English</a>
+  <a href="/articles/es" class="btn">Art&iacute;culos en Espa&ntilde;ol</a>
 </p>
 
+<hr />
+
 <% @articles.each do |article| %>
-  <article>
-    <header>
-      <p class="title">
-        <a href="<%= article_path article.slug %>"><%= article.title %></a>
-      </p>
-      <p class="publish-date">
-        <%= published_at article.lang  %>&nbsp;<%= article.date %>
-      </p>
-    </header>
-    <p>
-      <%= article.intro %>
-    </p>
-    <p>
-      <a href="<%= article_path article.slug %>" class="read-more fancy-pants">
-        <%= read_more article.lang %>
-      </a>
-    </p>
-  </article>
+  <blockquote>
+    <p><a class="text-info" href="<%= article_path article.slug %>"><%= article.title %></a></p>
+
+    <p><small><i><%= published_at article.lang %>&nbsp;<%= article.date %></i></small></p>
+
+    <p><%= article.intro %></p>
+
+    <p class="pull-right"><a href="<%= article_path article.slug %>" class="btn btn-inverse btn-big"><%= read_more article.lang %></a></p>
+    <div class="clearfix"></div>
+  </blockquote>
 <% end %>
+<script type="text/javascript" src="/javascripts/article.js"></script>
