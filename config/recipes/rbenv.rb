@@ -1,4 +1,8 @@
-set :rbenv_ruby_version, '2.0.0-p0'
+desc 'Load ruby in shell'
+task :'rbenv:local' do
+  queue! "rbenv local #{rbenv_ruby_version}"
+end
+
 desc 'Install rbenv.'
 task :'rbenv:install' do
   queue %[
@@ -18,6 +22,11 @@ desc 'Install ruby'
 task :'rbenv:install_ruby' do
   invoke :'rbenv:load'
   queue! "rbenv install #{rbenv_ruby_version}"
+end
+
+desc '[Re]create shims'
+task :'rbenv:rehash' do
+  queue! 'rbenv rehash'
 end
 
 desc 'List current ruby versions installed.'
