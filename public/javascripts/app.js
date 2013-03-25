@@ -2,6 +2,10 @@ angular.
   module('app', ['Controllers', 'Services']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.
+      when('/', {
+          templateUrl : '/partials/about.html'
+        , controller  : 'HomeCtrl'
+      }).
       when('/articles', {
           templateUrl : '/partials/articles.html'
         , controller  : 'ArticleListCtrl'
@@ -10,17 +14,14 @@ angular.
           templateUrl : '/partials/article.html'
         , controller  : 'ArticleDetailCtrl'
       }).
-      when('/projects', {
-          templateUrl : '/partials/projects.html'
-        , controller  : 'ProjectListCtrl'
-      }).
       when('/readings', {
           templateUrl : '/partials/readings.html'
         , controller  : 'ReadingListCtrl'
       }).
-      when('/movies', {
-          templateUrl : '/partials/movies.html'
-        , controller  : 'MovieListCtrl'
+      when('/projects', {
+          templateUrl : '/partials/projects.html'
+        , controller  : 'ProjectListCtrl'
+        , redirectTo : '/'
       }).
       otherwise({
         redirectTo: '/'

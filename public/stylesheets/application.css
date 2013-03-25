@@ -48,3 +48,34 @@ article {
 blockquote:hover {
   border-color: #000;
 }
+
+.social-icons .icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.social-icons .twitter {
+  background-image: url("/images/icons/twitter.png");
+}
+
+.social-icons .lastfm {
+  background-image: url("/images/icons/lastfm.png");
+}
+
+.social-icons .youtube {
+  background-image: url("/images/icons/youtube.png");
+}
+
+.social-icons .linkedin {
+  background-image: url("/images/icons/linkedin.png");
+}
+
+.social-icons .imdb {
+  background-image: url("/images/icons/imdb.png");
+}
+
+.social-icons .flickr {
+  background-image: url("/images/icons/flickr.png");
+}

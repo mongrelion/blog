@@ -1,5 +1,7 @@
 angular.
   module('Controllers', ['Filters']).
+  controller('HomeCtrl', [function() {
+  }]).
   controller('ArticleListCtrl', ['$scope', 'Article', function($scope, Article) {
     $scope.articles = [];
     Article.query(function(articles) {

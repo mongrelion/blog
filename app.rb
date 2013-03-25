@@ -4,7 +4,7 @@ class App < Sinatra::Base
 
   get '/' do
     cache_control :public, max_age: 604800 # expire in one week
-    erb :about
+    erb :index, layout: true
   end
 
   get '/articles' do
@@ -38,9 +38,5 @@ class App < Sinatra::Base
     @readings = Reading.all
     cache_readings! @readings
     json @readings
-  end
-
-  %w[projects movies].each do |route|
-    get("/#{route}") { redirect to '/' }
   end
 end
