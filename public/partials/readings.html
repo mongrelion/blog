@@ -1,0 +1,8 @@
+<div class="readings">
+  <blockquote ng-repeat="reading in readings">
+    <p><a class="text-info" ng-href="{{reading.url}}">{{reading.title}}</a></p>
+    <p>{{reading.author}}</p>
+    <small><i>Status: {{reading.status}}</i></small>
+    <p>{{reading.opinion}}</p>
+  </blockquote>
+</div>

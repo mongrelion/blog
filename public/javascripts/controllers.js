@@ -10,4 +10,10 @@ angular.
     Article.get({ article : $routeParams.article }, function(article) {
       $scope.article = article;
     })
+  }]).
+  controller('ReadingListCtrl', ['$scope', 'Reading', function($scope, Reading) {
+    $scope.readings = [];
+    Reading.query(function(readings) {
+      $scope.readings = readings;
+    });
   }]);
