@@ -8,19 +8,7 @@ class App < Sinatra::Base
   end
 
   get '/articles' do
-    @articles = Article.all
-    cache_articles! @articles
-    json @articles
-  end
-
-  get '/articles/en' do
-    @articles = Article.english
-    cache_articles! @articles
-    json @articles
-  end
-
-  get '/articles/es' do
-    @articles = Article.spanish
+    @articles = get_articles
     cache_articles! @articles
     json @articles
   end
@@ -38,5 +26,16 @@ class App < Sinatra::Base
     @readings = Reading.all
     cache_readings! @readings
     json @readings
+  end
+
+  def get_articles
+    case params[:lang]
+    when 'english'
+      Article.english
+    when 'spanish'
+      Article.spanish
+    else
+      Article.all
+    end
   end
 end
