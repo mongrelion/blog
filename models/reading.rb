@@ -1,4 +1,4 @@
-class Reading < OpenStruct
+class Reading < Base
   # - Attributes - #
   # - title
   # - author
