@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="futbol5">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>Mongrelion &copy; 2012</title>
+    <meta name="author" content="Carlos León">
+    <meta name="description" content="Carlos León's personal website">
+    <meta name="keywords" content="html, css, javascript, js, jquery, angularjs, angular, backbonejs, backbone, mongodb, mongo, sql, mysql, postgresql, postgres, psql, ruby, ruby on rails, rails, ror, barranquilla, colombia, developer, developers, desarrollador, desarrolladores, programador, programador de computadores, programador de sistemas, programadores, analista, analistas">
+    <title>Mongrelion &copy; 2013</title>
     <link href="/images/avatar.png" rel="icon" type="image/png" />
-    <link rel="stylesheet" href="/stylesheets/bootstrap.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="/stylesheets/mongrelion.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
     <!-- menu -->
@@ -15,10 +17,10 @@
         <div class="container">
           <a class="brand" href="/">Carlos Le&oacute;n</a>
           <ul class="nav">
-            <li><a href="/articles">&#9733;&nbsp;Articles</a></li>
-            <li><a href="/projects">&#9733;&nbsp;Projects</a></li>
-            <li><a href="/readings">&#9733;&nbsp;Readings</a></li>
-            <li><a href="/movies">&#9733;&nbsp;Movies</a></li>
+            <li><a href="/#/articles">&#9733;&nbsp;Articles</a></li>
+            <li><a href="/#/projects">&#9733;&nbsp;Projects</a></li>
+            <li><a href="/#/readings">&#9733;&nbsp;Readings</a></li>
+            <li><a href="/#/movies">&#9733;&nbsp;Movies</a></li>
             <li><a href="http://flickr.com/photos/mongrelion">&#9733;&nbsp;Photos</a></li>
           </ul>
         </div>
@@ -44,7 +46,7 @@
           </ul>
         </div>
 
-        <div class="span9">
+        <div class="span9" ng-view>
           <%= yield %>
         </div>
       </div>
@@ -52,6 +54,6 @@
     <!-- end container -->
 
     <!-- javascripts -->
-    <%= erb :google_analytics %>
+    <%= erb :js %>
   </body>
 </html>

@@ -1,4 +1,4 @@
-class Article < OpenStruct
+class Article < Base
   # - Attributes - #
   # - title
   # - date
@@ -17,16 +17,12 @@ class Article < OpenStruct
 
   def content
     if file
-      @content ||= RDiscount.new(File.read File.join(root, 'articles', file)).to_html
+      @content ||= RDiscount.new(File.read File.join(root, 'articles', "#{file}.markdown")).to_html
     end
   end
 
-  def slug
-    @slug ||= file.match(/^(.+).markdown$/)[1] if file
-  end
-
-  def spanish?
-    @spanish ||= lang.eql? 'spanish'
+  def to_h
+    super.merge! content: content
   end
 
   # - Class Methods - #

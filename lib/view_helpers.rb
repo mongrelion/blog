@@ -22,4 +22,13 @@ module ViewHelpers
       'Read more'
     end
   end
+
+  def json(obj)
+    content_type :json
+    if obj.is_a? String
+      obj
+    else
+      obj.to_json
+    end
+  end
 end

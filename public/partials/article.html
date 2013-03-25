@@ -1,0 +1,40 @@
+<article class="fancy-border">
+  <header>
+    <h1>{{article.title}}</h1>
+
+    <p class="muted">
+      <small>{{article.lang | publishedAt}}&nbsp;{{article.date}}</small>
+    </p>
+
+    <a ng-show="article.hasSpanishVersion()" ng-href="{{article.spanish_version}}" class="btn btn-inverse">Leer versi&oacute;n en Espa&ntilde;ol</a>
+    <a ng-show="article.hasEnglishVersion()" ng-href="{{article.english_version}}" class="btn btn-inverse">Read English version</a>
+  </header>
+  <hr />
+  <p ng-bind-html-unsafe="article.content"></p>
+</article>
+
+<script type="text/javascript" src="/javascripts/article.js"></script>
+
+<!-- Syntax Highlighting -->
+<link href='/stylesheets/monokai.css' rel='stylesheet' type='text/css' />
+<!--<link href='/stylesheets/solarized.dark.css' rel='stylesheet' type='text/css' />-->
+<!--<link href='/stylesheets/zenburn.css' rel='stylesheet' type='text/css' />-->
+<script type="text/javascript" src="/javascripts/highlight.pack.js"></script>
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+  alert('erda');
+</script>
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'mongrelion'; // required: replace example with your forum shortname
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

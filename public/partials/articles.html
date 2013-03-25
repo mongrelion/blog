@@ -1,0 +1,18 @@
+<p>
+  <a href="/articles/en" class="btn">Articles in English</a>
+  <a href="/articles/es" class="btn">Art&iacute;culos en Espa&ntilde;ol</a>
+</p>
+
+<hr />
+
+<blockquote ng-repeat="article in articles">
+  <p><a class="text-info" ng-href="{{article.file | articlePath}}">{{article.title}}</a></p>
+
+  <p><small><i>{{article.lang | publishedAt}}&nbsp;{{article.date}}</i></small></p>
+
+  <p>{{article.intro}}</p>
+
+  <p class="pull-right"><a ng-href="{{article.file | articlePath}}" class="btn btn-inverse btn-big">{{article.lang | readMore}}</a></p>
+  <div class="clearfix"></div>
+</blockquote>
+<script type="text/javascript" src="/javascripts/article.js"></script>

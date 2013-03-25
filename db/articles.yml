@@ -1,8 +1,8 @@
 - :title: Mejorando el rendimiento de mi sitio (¿?) Parte I
   :date: 2013-03-24
   :lang: spanish
-  :file: 'mejorando-el-rendimiento-de-mi-sitio.markdown'
-  :english_version: 'improving-my-sites-performance.markdown'
+  :file: 'mejorando-el-rendimiento-de-mi-sitio'
+  :english_version: 'improving-my-sites-performance'
   :tags: 'ruby'
   :intro: |
     Cuando finalmente decidí sacar un blog, le dí una merecida oportunidad a Jekyll
@@ -14,8 +14,8 @@
 - :title: Improving (?) my site's performance Part I
   :date: 2013-03-24
   :lang: english
-  :file: 'improving-my-sites-performance.markdown'
-  :spanish_version: 'mejorando-el-rendimiento-de-mi-sitio.markdown'
+  :file: 'improving-my-sites-performance'
+  :spanish_version: 'mejorando-el-rendimiento-de-mi-sitio'
   :tags: 'ruby'
   :intro: |
     When I decided to finally come up with a blog, I gave Jekyll and Octopress
@@ -29,7 +29,7 @@
 - :title: Backbone.js best practices for n00bs
   :date: 2012-05-31
   :lang: english
-  :file: 'backbone-js-best-practices-for-n00bs.markdown'
+  :file: 'backbone-js-best-practices-for-n00bs'
   :tags: "js, javascript, backbone, backbonejs, backbone.js, coffeescript"
   :intro: |
     The other day I was looking for some Backbone.js tutorials on the internetz,
@@ -39,7 +39,7 @@
 
 # - :title: Pagination with Backbone.js and Rails
 #   :date: 2012-08-07
-#   :file: 'pagination-with-backbonejs.markdown'
+#   :file: 'pagination-with-backbonejs'
 #   :lang: english
 #   #:spanish_version: 'paginacion-con-backbonejs'
 #   :tags: "javascript, js, coffeescript, coffee script, backbone, backbonejs, pagination"
@@ -51,7 +51,7 @@
 - :title: Method stub with MiniTest
   :date: 2012-05-24
   :lang: english
-  :file: 'method-stub-with-minitest.markdown'
+  :file: 'method-stub-with-minitest'
   :spanish_version: 'stub-de-metodos-con-minitest'
   :tags: "ruby, test, testing, minitest"
   :intro: |
@@ -63,7 +63,7 @@
 
 - :title: Stub de métodos con MiniTest
   :date: 2012-05-24
-  :file: 'stub-de-metodos-con-minitest.markdown'
+  :file: 'stub-de-metodos-con-minitest'
   :lang: spanish
   :english_version: 'method-stub-with-minitest'
   :tags: "ruby, test, testing, minitest"
