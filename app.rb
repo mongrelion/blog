@@ -1,27 +1,33 @@
 class App < Sinatra::Base
-  helpers  ViewHelpers
+  helpers ViewHelpers
+  helpers CacheHelpers
 
   get '/' do
+    cache_control :public, max_age: 604800 # expire in one week
     erb :about
   end
 
   get '/articles' do
     @articles = Article.all
+    cache_articles! @articles
     erb :articles
   end
 
   get '/articles/en' do
     @articles = Article.english
+    cache_articles! @articles
     erb :articles
   end
 
   get '/articles/es' do
     @articles = Article.spanish
+    cache_articles! @articles
     erb :articles
   end
 
   get '/articles/:article' do
     if @article = Article.find(params[:article])
+      cache_article! @article
       erb :article
     else
       raise Sinatra::NotFound
@@ -30,6 +36,7 @@ class App < Sinatra::Base
 
   get '/readings' do
     @readings = Reading.all
+    cache_readings! @readings
     erb :readings
   end
 
