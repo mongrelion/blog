@@ -5,15 +5,19 @@ require './config/recipes/puma'
 require './config/recipes/gems'
 
 set :domain,     'carlosleon.info'
-set :deploy_to,  '/root'
+set :user,       'deploy'
+set :deploy_to,  '/var/www/carlosleon.info'
 set :repository, 'https://github.com/mongrelion/carlosleon.info.git'
 set :branch,     'master'
 
 # - Puma Configuration Variables - #
-set :puma_config_file_path, "#{deploy_to}/#{shared_path}/config/puma.rb"
-set :puma_bind_address,     'tcp://127.0.0.1:9292'
+set :puma_bind_address,     "unix://#{deploy_to}/#{shared_path}/tmp/socket"
 set :puma_min_threads,      0
 set :puma_max_threads,      16
+set :puma_config_file_path, "#{deploy_to}/#{shared_path}/config/puma.rb"
+set :puma_pidfile,          "#{deploy_to}/#{shared_path}/tmp/pids/puma.pid"
+set :puma_access_log_path,  "#{deploy_to}/#{shared_path}/log/access.log"
+set :puma_error_log_path,   "#{deploy_to}/#{shared_path}/log/error.log"
 
 # - rbenv Configuration Variables - #
 set :rbenv_ruby_version, '2.0.0-p0'
@@ -28,8 +32,6 @@ set :gems, {
 # Manually create these paths in shared/ (eg: shared/config/puma.rb) in the server.
 # They will be linked in the 'deploy:link_shared_paths' step.
 set :shared_paths, ['config/puma.rb', 'log', 'pids']
-
-set :user, 'deploy' # Username in the server to SSH to.
 
 task :environment do
   invoke :'rbenv:load'

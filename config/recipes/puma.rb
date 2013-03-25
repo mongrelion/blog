@@ -1,15 +1,12 @@
 desc 'Create Puma configuration file'
 task :'puma:config' do
-  full_current_path = "#{deploy_to}/#{current_path}"
-  full_shared_path  = "#{deploy_to}/#{shared_path}"
   config = %{
     environment     "production"
     daemonize       true
-    directory       "#{full_current_path}"
-    rackup          "#{full_current_path}/config.ru"
-    pidfile         "#{full_shared_path}/tmp/pids/puma.pid"
-    state_path      "#{full_shared_path}/tmp/pids/puma.state"
-    stdout_redirect "#{full_shared_path}/log/access.log", "#{full_shared_path}/log/error.log", true
+    directory       "#{deploy_to}/#{current_path}"
+    rackup          "#{deploy_to}/#{current_path}/config.ru"
+    pidfile         "#{puma_pidfile}"
+    stdout_redirect "#{puma_access_log_path}", "#{puma_error_log_path}", true
     bind            "#{puma_bind_address}"
     threads         #{puma_min_threads}, #{puma_max_threads}
   }
@@ -18,9 +15,16 @@ task :'puma:config' do
   queue! "echo '-----> Done.'"
 end
 
-%w[halt restart start stats status stop].each do |command|
-  desc "#{command.capitalize} Puma"
-  task "puma:#{command}" => :environment do
-    queue "pumactl -S #{deploy_to}/#{shared_path}/tmp/pids/puma.state #{command}"
-  end
+desc 'Start Puma'
+task :'puma:start' => :environment do
+  queue! "cd #{deploy_to}/#{current_path} && puma --config ./config/puma.rb"
+end
+
+task :'puma:stop' => :environment do
+  queue! "kill -s TERM `cat #{puma_pidfile}`"
+end
+
+task :'puma:restart' => :environment do
+  invoke :'puma:stop'
+  invoke :'puma:start'
 end
