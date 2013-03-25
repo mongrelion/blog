@@ -7,6 +7,12 @@ angular.
     Article.query(function(articles) {
       $scope.articles = articles;
     });
+
+    $scope.filterByLang = function(lang) {
+      Article.query({ lang : lang }, function(articles) {
+        $scope.articles = articles;
+      });
+    }
   }]).
   controller('ArticleDetailCtrl', ['$scope', '$routeParams', 'Article', function($scope, $routeParams, Article) {
     Article.get({ article : $routeParams.article }, function(article) {
