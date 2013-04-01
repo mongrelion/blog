@@ -16,5 +16,4 @@ require './app'
 # Preload articles and readings
 Article.all
 Reading.all
-
 run App

@@ -2,6 +2,14 @@ class App < Sinatra::Base
   helpers ViewHelpers
   include CacheHelpers
 
+  configure do
+    set :visits_count, 1
+  end
+
+  before do
+    settings.visits_count += 1
+  end
+
   get '/' do
     cache_control :public, max_age: 604800 # expire in one week
     erb :index, layout: true
