@@ -1,9 +1,5 @@
-module Model
-  def self.included base
-    base.send :extend, ClassMethods
-  end
-
-  module ClassMethods
+class Model
+  class << self
     def all
       unless @db_file
         raise Exception, 'db_file not set.'
