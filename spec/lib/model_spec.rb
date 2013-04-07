@@ -22,11 +22,15 @@ describe Model do
           proc { klass.all }.must_raise Errno::ENOENT
         end
 
-        it 'should return an array' do
-          skip
-          Apple = Class.new { include Model; set_db_file :apples }
-          Apple.stub :base_dir, File.join(root, 'spec/support') do
-            Apple.all.must_be_kind_of Array
+        it 'should return an array of records' do
+          Model.stub :base_dir, File.join(root, 'spec/support') do
+            Apple = Class.new(Model) { set_db_file :apples }
+            apples = Apple.all
+            apples.must_be_kind_of Array
+            apples.must_equal [
+              {:color=>"red", :weight=>"50gr", :country=>"Chile"},
+              {:color=>"green", :weight=>"63gr", :country=>"Colombia"}
+            ]
           end
         end
 

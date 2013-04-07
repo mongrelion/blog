@@ -5,7 +5,7 @@ class Model
         raise Exception, 'db_file not set.'
       end
 
-      @all ||= YAML.load_file(db).map { |record| new record }
+      @all ||= YAML.load_file(db)
     end
 
     def set_db_file name
