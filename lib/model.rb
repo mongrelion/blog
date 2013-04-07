@@ -1,4 +1,4 @@
-class Model
+class Model < OpenStruct
   class << self
     def all
       unless @db_file

@@ -4,7 +4,21 @@ require 'model'
 require 'kernel'
 
 describe Model do
-  describe "class including module Model" do
+  describe "class including Model" do
+    describe '#new' do
+      it 'must return a new instance of OpenStruct class' do
+        Car = Class.new(Model)
+        Car.new.must_be_kind_of OpenStruct
+      end
+
+      it 'should assign attributes' do
+        Computer = Class.new(Model)
+        computer = Computer.new keyboard: true, trackpad: true, os: 'OS X'
+        computer.keyboard.must_equal true
+        computer.trackpad.must_equal true
+        computer.os.must_equal 'OS X'
+      end
+    end
     describe "#all" do
       it "should be included in the public method's list" do
         klass = Class.new Model
@@ -35,7 +49,6 @@ describe Model do
         end
 
         it 'should raise an exception if no db_file is set' do
-          klass = Class.new Model
           proc { Class.new(Model).all }.must_raise Exception, 'db_file not set.'
         end
       end
