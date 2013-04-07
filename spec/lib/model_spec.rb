@@ -42,8 +42,8 @@ describe Model do
             apples = Apple.all
             apples.must_be_kind_of Array
             apples.must_equal [
-              {:color=>"red", :weight=>"50gr", :country=>"Chile"},
-              {:color=>"green", :weight=>"63gr", :country=>"Colombia"}
+              Apple.new({:color=>"red", :weight=>"50gr", :country=>"Chile"}),
+              Apple.new({:color=>"green", :weight=>"63gr", :country=>"Colombia"})
             ]
           end
         end
