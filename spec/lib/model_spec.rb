@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/spec'
 require 'model'
+require 'kernel'
 
 describe Model do
   describe "class including module Model" do
@@ -17,6 +18,16 @@ describe Model do
 
       describe 'when called' do
         it 'should raise an exception if db file does not exist' do
+          klass = Class.new { include Model; set_db_file :foo }
+          proc { klass.all }.must_raise Errno::ENOENT
+        end
+
+        it 'should return an array' do
+          skip
+          Apple = Class.new { include Model; set_db_file :apples }
+          Apple.stub :base_dir, File.join(root, 'spec/support') do
+            Apple.all.must_be_kind_of Array
+          end
         end
 
         it 'should raise an exception if no db_file is set' do
@@ -29,6 +40,14 @@ describe Model do
     describe '#db_file' do
       it 'should not be exposed to instances' do
         Class.new { include Model }.new.respond_to?(:db_file).must_equal false
+      end
+
+      it 'should return db_file class instance variable' do
+        klass = Class.new do
+          include Model
+          set_db_file :foo
+        end
+        klass.instance_variable_get('@db_file').must_equal klass.db_file
       end
     end
 
