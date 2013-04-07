@@ -5,20 +5,20 @@ module Model
 
   module ClassMethods
     def all
-      unless @table_name
-        raise Exception, 'table_name not set.'
+      unless @db_file
+        raise Exception, 'db_file not set.'
       end
     end
 
-    def set_table_name(name)
+    def set_db_file(name)
       unless name.is_a? Symbol
         raise ArgumentError, "Symbol expected but got #{name.class.name}."
       end
-      @table_name = name
+      @db_file = name
     end
 
-    def table_name
-      @table_name
+    def db_file
+      @db_file
     end
   end
 end

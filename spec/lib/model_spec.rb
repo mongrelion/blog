@@ -16,62 +16,65 @@ describe Model do
       end
 
       describe 'when called' do
-        it 'should raise an error if no table_name is set' do
+        it 'should raise an exception if db file does not exist' do
+        end
+
+        it 'should raise an exception if no db_file is set' do
           klass = Class.new { include Model }
-          proc { klass.all }.must_raise Exception, 'table_name not set.'
+          proc { klass.all }.must_raise Exception, 'db_file not set.'
         end
       end
     end
 
-    describe '#table_name' do
+    describe '#db_file' do
       it 'should not be exposed to instances' do
-        Class.new { include Model }.new.respond_to?(:table_name).must_equal false
+        Class.new { include Model }.new.respond_to?(:db_file).must_equal false
       end
     end
 
-    describe "#set_table_name" do
+    describe "#set_db_file" do
       it "should be included in the public method's list" do
         klass = Class.new { include Model }
-        klass.respond_to?(:set_table_name).must_equal true
+        klass.respond_to?(:set_db_file).must_equal true
       end
 
       it "should not be exposed to instances" do
         klass = Class.new { include Model }
-        klass.new.respond_to?(:set_table_name).must_equal false
+        klass.new.respond_to?(:set_db_file).must_equal false
       end
 
       it "should only take symbols as argument" do
         proc {
           Class.new do
             include Model
-            set_table_name 'foo'
+            set_db_file 'foo'
           end
         }.must_raise ArgumentError, /Symbol expected/
       end
 
-      it "should set table_name" do
+      it "should set db_file" do
         klass = Class.new do
           include Model
-          set_table_name :foo
+          set_db_file :foo
         end
 
-        klass.table_name.must_equal :foo
+        klass.db_file.must_equal :foo
       end
 
-      it "should let set table_name nicely between different classes" do
+      it "should let set db_file nicely between different classes" do
         foo_class = Class.new do
           include Model
-          set_table_name :foo
+          set_db_file :foo
         end
 
         # bar_class, if you know what I mean.
         bar_class = Class.new do
           include Model
-          set_table_name :bar
+          set_db_file :bar
         end
 
-        foo_class.table_name.must_equal :foo
-        bar_class.table_name.must_equal :bar
+        foo_class.db_file.must_equal :foo
+        bar_class.db_file.must_equal :bar
       end
     end
   end
