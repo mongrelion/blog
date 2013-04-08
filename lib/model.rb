@@ -11,7 +11,11 @@ class Model < OpenStruct
         raise Exception, 'db_file not set.'
       end
 
-      @all ||= YAML.load_file(db).map { |record| new record }
+      if records = YAML.load_file(db)
+        @all ||= records.map { |record| new record }
+      else
+        @all ||= []
+      end
     end
 
     def set_db_file name

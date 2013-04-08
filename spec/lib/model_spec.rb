@@ -25,6 +25,13 @@ describe Model do
       end
     end
     describe "#all" do
+      it 'should return an empty array given an empty database file' do
+        Model.stub :base_dir, File.join(root, 'spec', 'support', 'db') do
+          Mp3 = Class.new(Model) { set_db_file :mp3 }
+          Mp3.all.must_be_empty
+        end
+      end
+
       it "should be included in the public method's list" do
         klass = Class.new Model
         klass.respond_to?(:all).must_equal true
@@ -42,7 +49,7 @@ describe Model do
         end
 
         it 'should return an array of records' do
-          Model.stub :base_dir, File.join(root, 'spec/support') do
+          Model.stub :base_dir, File.join(root, 'spec', 'support', 'db') do
             Apple = Class.new(Model) { set_db_file :apples }
             apples = Apple.all
             apples.must_be_kind_of Array
