@@ -1,6 +1,4 @@
-require 'minitest/autorun'
-require 'minitest/spec'
-require 'kernel'
+require 'spec_helper'
 
 describe Kernel do
   describe '#root' do

@@ -1,7 +1,4 @@
-require 'minitest/autorun'
-require 'minitest/spec'
-require 'model'
-require 'kernel'
+require 'spec_helper'
 
 describe Model do
   describe "class including Model" do
