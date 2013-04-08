@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'yaml'
+require 'json'
 require 'model'
 require 'kernel'

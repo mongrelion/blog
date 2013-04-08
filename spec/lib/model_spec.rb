@@ -2,6 +2,14 @@ require 'spec_helper'
 
 describe Model do
   describe "class including Model" do
+    describe '#to_json' do
+      it 'must return a JSON representation of the object' do
+        Room = Class.new Model
+        room = Room.new big: true, doors: 2, balcony: true, windows: 2
+        room.to_json.must_equal '{"big":true,"doors":2,"balcony":true,"windows":2}'
+      end
+    end
+
     describe '#new' do
       it 'must return a new instance of OpenStruct class' do
         Car = Class.new(Model)
