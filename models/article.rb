@@ -1,12 +1,14 @@
-class Article < Base
+class Article < Model
+  set_db_file :articles
+
   # - Attributes - #
-  # - title
-  # - date
-  # - file
-  # - intro
-  # - tags
-  # - spanish_version [might not be present always]
-  # - english_version [might not be present always]
+  # * title
+  # * date
+  # * file
+  # * intro
+  # * tags
+  # * spanish_version [might not be present always]
+  # * english_version [might not be present always]
 
   # - Instance Methods - #
   def initialize(args)
@@ -16,8 +18,9 @@ class Article < Base
   end
 
   def content
-    if file
-      @content ||= RDiscount.new(File.read File.join(root, 'articles', "#{file}.markdown")).to_html
+    path = File.join(root, 'articles', "#{file}.markdown")
+    if file and File.exists?(path)
+      @content ||= RDiscount.new(File.read path).to_html
     end
   end
 
@@ -27,9 +30,8 @@ class Article < Base
 
   # - Class Methods - #
   class << self
-    attr_accessor :all
-    def all
-      @all ||= YAML.load_file(db_path).map { |article| new article }
+    def find(slug)
+      all.select { |article| article.file.include? slug }.first
     end
 
     def spanish
@@ -44,14 +46,5 @@ class Article < Base
       all.select { |article| article.lang.eql? lang }
     end
 
-    def find(slug)
-      all.select { |article| article.file.include? slug }.first
-    end
-
-    protected
-
-    def db_path
-      File.join root, 'db', 'articles.yml'
-    end
   end
 end

@@ -1,0 +1,23 @@
+- :title: Example
+  :date: 2013-04-09
+  :lang: english
+  :file: 'example'
+  :tags: 'whatever'
+  :intro: |
+    Blah blah blah blah
+
+- :title: Foo bar baz
+  :date: 2013-04-09
+  :lang: english
+  :file: 'foo-bar-baz'
+  :tags: 'ruby'
+  :intro: |
+    Blah blah blah blah
+
+- :title: Curso de español nivel 1
+  :date: 2013-04-09
+  :lang: spanish
+  :file: 'foo-bar-baz'
+  :tags: 'langs'
+  :intro: |
+    Blah blah blah blah
