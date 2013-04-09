@@ -20,8 +20,6 @@ angular.
       }).
       when('/projects', {
           templateUrl : '/partials/projects.html'
-        , controller  : 'ProjectListCtrl'
-        , redirectTo : '/'
       }).
       otherwise({
         redirectTo: '/'

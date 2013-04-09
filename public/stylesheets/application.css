@@ -26,6 +26,15 @@ body {
   font-size: 0.85em;
 }
 
+.container-fluid .row-fluid .profile-box {
+  position: fixed;
+}
+
+.container-fluid .row-fluid .content {
+  float: right;
+  padding-left: 5px;
+}
+
 ul.social li a {
   margin-bottom: 5px;
 }

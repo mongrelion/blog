@@ -20,7 +20,6 @@
             <li><a href="/#/articles">&#9733;&nbsp;Articles</a></li>
             <li><a href="/#/readings">&#9733;&nbsp;Readings</a></li>
             <li><a href="/#/projects">&#9733;&nbsp;Projects</a></li>
-            <li><a href="/#/movies">&#9733;&nbsp;Movies</a></li>
             <li><a href="http://flickr.com/photos/mongrelion">&#9733;&nbsp;Photos</a></li>
             <li><a href="http://github.com/mongrelion">&#9733;&nbsp;GitHub</a></li>
           </ul>
@@ -32,7 +31,7 @@
     <!-- container -->
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3 fancy-border">
+        <div class="span3 fancy-border profile-box">
           <!-- Sidebar Content -->
           <ul class="thumbnails">
             <li class="span12">
@@ -49,7 +48,7 @@
           </div>
         </div>
 
-        <div class="span9" ng-view>
+        <div class="span9 content" ng-view>
           <%= yield %>
         </div>
       </div>
@@ -57,7 +56,7 @@
     <!-- end container -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <p class="muted">
           <a href="http://www.paulrobertlloyd.com/2009/06/social_media_icons/">Social Media Icons</a> licenced under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> license.
         </p>
