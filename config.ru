@@ -11,6 +11,7 @@ require './lib/core_ext/kernel'
 require './lib/model'
 require './models/article'
 require './models/reading'
+require './models/project'
 require './app'
 
 # Preload articles and readings

@@ -11,10 +11,6 @@ module CacheHelpers
     cache_array! articles
   end
 
-  def cache_readings!(readings)
-    cache_array! readings
-  end
-
   def cache_array!(array)
     if should_cache?
       cache_control :public, :must_revalidate

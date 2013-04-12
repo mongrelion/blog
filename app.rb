@@ -7,6 +7,12 @@ class App < Sinatra::Base
     erb :index, layout: true
   end
 
+  get '/projects' do
+    @projects = get_projects
+    cache_array! @projects
+    json @projects
+  end
+
   get '/articles' do
     @articles = get_articles
     cache_articles! @articles
@@ -24,8 +30,19 @@ class App < Sinatra::Base
 
   get '/readings' do
     @readings = Reading.all
-    cache_readings! @readings
+    cache_array! @readings
     json @readings
+  end
+
+  def get_projects
+    case params[:type]
+    when 'os'
+      Project.os
+    when 'com'
+      Project.com
+    else
+      Project.all
+    end
   end
 
   def get_articles
