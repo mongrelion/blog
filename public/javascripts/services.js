@@ -7,4 +7,8 @@ angular.
   factory('Reading', ['$resource', function($resource) {
     var Reading = $resource('/readings');
     return Reading;
+  }]).
+  factory('Project', ['$resource', function($resource) {
+    var Project = $resource('/projects');
+    return Project;
   }]);

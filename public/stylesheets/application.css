@@ -102,3 +102,21 @@ blockquote:hover {
   font-size: 0.85em;
   margin-bottom: 0;
 }
+
+.container-fluid .row-fluid .content ul.projects {
+  margin-left: inherit;
+}
+
+.container-fluid .row-fluid .content ul.projects li {
+  margin: 0 10px 30px 0;
+  height: 310px;
+}
+
+.container-fluid .row-fluid .content ul.projects .project {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.thumbnails .span3 .project .description {
+  font-size: 0.8em;
+}

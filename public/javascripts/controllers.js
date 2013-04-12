@@ -24,4 +24,17 @@ angular.
     Reading.query(function(readings) {
       $scope.readings = readings;
     });
+  }]).
+  controller('ProjectListCtrl', ['$scope', 'Project', function($scope, Project) {
+    // OpenSource/Non-Commercial projects
+    $scope.osProjects = [];
+    Project.query({type : 'os'}, function(projects) {
+      $scope.osProjects = projects;
+    });
+
+    // Commercial projects
+    $scope.comProjects = [];
+    Project.query({type : 'com'}, function(projects) {
+      $scope.comProjects = projects;
+    });
   }]);
