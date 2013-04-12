@@ -108,7 +108,7 @@ blockquote:hover {
 }
 
 .container-fluid .row-fluid .content ul.projects li {
-  margin: 0 10px 60px 0;
+  margin: 0 10px 100px 0;
   height: 310px;
 }
 
@@ -116,6 +116,11 @@ blockquote:hover {
   padding: 10px;
   background-color: #f5f5f5;
 }
+
+.container-fluid .row-fluid .content ul.projects .project:hover {
+  border-color: #08c;
+}
+
 
 .thumbnails .span3 .project .description {
   font-size: 0.8em;
