@@ -1,5 +1,5 @@
 angular.
-  module('app', ['Controllers', 'Services']).
+  module('app', ['Controllers', 'Services', 'Directives']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.
       when('/', {

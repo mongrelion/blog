@@ -1,0 +1,10 @@
+<ul class="projects thumbnails span11">
+  <li class="span3" ng-repeat="project in projects">
+    <div class="project thumbnail">
+      <img ng-src="{{project.screenshot}}" />
+      <h3><a ng-href="{{project.url}}">{{project.name}}</a></h3>
+      <p>Team/Employer: <i><a ng-href="{{project.teamUrl}}">{{project.team}}</a></i></p>
+      <p class="description">{{project.description}}</p>
+    </div>
+  </li>
+</ul>

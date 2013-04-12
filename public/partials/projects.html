@@ -9,36 +9,17 @@
   </p>
 </div>
 
-<div class="clearfix"></div>
-
 <!-- Non Commercial Projects -->
+<div class="clearfix"></div>
 <div class="alert alert-info span11">
   <small>Non-Commercial projects (projects I have participated in for fun/love/friendship/boreness).</small>
 </div>
 
-<ul class="projects thumbnails span11">
-  <li class="span3" ng-repeat="project in osProjects">
-    <div class="project thumbnail">
-      <img ng-src="{{project.screenshot}}" />
-      <h3><a ng-href="{{project.url}}">{{project.name}}</a></h3>
-      <p>Team/Employer: <i><a ng-href="{{project.teamUrl}}">{{project.team}}</a></i></p>
-      <p class="description">{{project.description}}</p>
-    </div>
-  </li>
-</ul>
+<projects collection="osProjects"></projects>
 
 <!-- Commercial Projects -->
+<div class="clearfix"></div>
 <div class="alert alert-success span11">
   <small>Commercial projects (projects I have made money with).</small>
 </div>
-
-<ul class="projects thumbnails span11">
-  <li class="span3" ng-repeat="project in comProjects">
-    <div class="project thumbnail">
-      <img ng-src="{{project.screenshot}}" />
-      <h3><a ng-href="{{project.url}}">{{project.name}}</a></h3>
-      <p>Team/Employer: <i><a ng-href="{{project.teamUrl}}">{{project.team}}</a></i></p>
-      <p class="description">{{project.description}}</p>
-    </div>
-  </li>
-</ul>
+<projects collection="comProjects"></projects>
