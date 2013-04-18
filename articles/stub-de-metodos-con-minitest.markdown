@@ -3,9 +3,7 @@ necesarios para nuestro conjunto de pruebas (unitarias, de integración, etc),
 soportando TDD, BDD, mocking y benchmarking. Viene por defecto con Ruby 1.9.x
 y también está disponible para Ruby 1.8.x.
 
-Provee dos tipos de estilos de pruebas:
-*  Test::Unit
-*  Spec
+Provee dos tipos de estilos de pruebas: Test::Unit y Spec.
 
 Personalmente prefiero el estilo de **Spec**, puesto que este tipo de tests son
 más fáciles de leer. Puedes encontrar más información en el la [documentación]
@@ -19,8 +17,8 @@ cómo hacer stub de métodos usando esta herramienta.
 Básicamente tenemos dos opciones. La primera es hacer algo como lo que hace
 [Aaron Patterson] (a.k.a. [@tenderlove]) en un [screencast] en [PeepCode].
 Es algo más o menos así:
-<pre>
-  <code class="ruby">
+<pre class="prettyprint">
+  <code>
     klass = Class.new User do
       define_method(:confirmed?) { true }
     end
@@ -37,8 +35,8 @@ le pasamos al método **define_method**, que en este caso es el valor _true_.
 
 La segunda opción que tenemos, la cual es más limpia, elegante, bacanita y menos
 compeja es usando el método MiniTest#stub:
-<pre>
-  <code class="ruby">
+<pre class="prettyprint">
+  <code>
     User.stub :confirmed?, true do
       user = User.first
       user.confirmed?.must_equal true

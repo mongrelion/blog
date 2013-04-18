@@ -14,8 +14,8 @@ about how to stub methods using this tool.
 So we basically have two options. The first approach is to do something like
 [Aaron Patterson] (a.k.a. [@tenderlove]) does on his [PeepCode]'s [screencast].
 It's something like this:
-<pre>
-  <code class="ruby">
+<pre class="prettyprint">
+  <code>
     klass = Class.new User do
       define_method(:confirmed?) { true }
     end
@@ -32,8 +32,8 @@ method, which in this case is a _true_ value.
 
 The second way to do this, which is cleaner, niftier, fancier and less complex
 is by using the MiniTest's stub method:
-<pre>
-  <code class="ruby">
+<pre class="prettyprint">
+  <code>
     User.stub :confirmed?, true do
       user = User.first
       user.confirmed?.must_equal true
