@@ -2,7 +2,7 @@ angular.
   module('Filters', []).
   filter('articlePath', function() {
     return function(file) {
-      return "/#/articles/" + file;
+      return "/articles/" + file;
     };
   }).
   filter('readMore', function() {
@@ -17,6 +17,7 @@ angular.
   filter('publishedAt', function() {
     return function(lang) {
       if ('spanish' == lang) {
+        // TODO: Fix typo.
         return 'Publicado en';
       } else {
         return 'Published at';
