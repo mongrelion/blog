@@ -1,5 +1,24 @@
 angular.
   module('Directives', []).
+  directive('icons', function() {
+    var definition = {
+        restrict    : 'E'
+      , replace     : true
+      , transclude  : true
+      , templateUrl : '/directives/icons.html'
+    };
+    return definition;
+  }).
+  directive('icon', function() {
+    var definition = {
+        restrict    : 'E'
+      , replace     : true
+      , transclude  : true
+      , templateUrl : '/directives/icon.html'
+      , scope       : { name : '@', link : '@' }
+    };
+    return definition;
+  }).
   directive('menu', function() {
     var definition = {
         restrict    : 'E'
