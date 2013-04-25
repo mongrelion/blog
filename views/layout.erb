@@ -12,21 +12,14 @@
     <link rel="stylesheet" href="/stylesheets/lib/prettify/sunburst.css" type="text/css" media="all" charset="utf-8">
   </head>
   <body>
-    <!-- menu -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="/">Carlos Le&oacute;n</a>
-          <ul class="nav">
-            <li><a href="/#/articles">&#9733;&nbsp;Articles</a></li>
-            <li><a href="/#/readings">&#9733;&nbsp;Readings</a></li>
-            <li><a href="/#/projects">&#9733;&nbsp;Projects</a></li>
-            <li><a href="http://flickr.com/photos/mongrelion">&#9733;&nbsp;Photos</a></li>
-            <li><a href="http://github.com/mongrelion">&#9733;&nbsp;GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <!-- Top Menu -->
+    <menu>
+      <item link="#/articles">&#9733;&nbsp;Articles</item>
+      <item link="#/readings">&#9733;&nbsp;Readings</item>
+      <item link="#/projects">&#9733;&nbsp;Projects</item>
+      <item link="http://flickr.com/photos/mongrelion">&#9733;&nbsp;Photos</item>
+      <item link="http://github.com/mongrelion">&#9733;&nbsp;GitHub</item>
+    </menu>
     <!-- end menu -->
 
     <!-- container -->
@@ -56,6 +49,7 @@
     </div>
     <!-- end container -->
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container-fluid">
         <p class="muted">
@@ -67,7 +61,7 @@
       </div>
     </footer>
 
-    <!-- javascripts -->
+    <!-- Javascripts -->
     <%= erb :js %>
   </body>
 </html>

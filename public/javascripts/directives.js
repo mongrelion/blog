@@ -1,5 +1,24 @@
 angular.
   module('Directives', []).
+  directive('menu', function() {
+    var definition = {
+        restrict    : 'E'
+      , replace     : true
+      , transclude  : true
+      , templateUrl : '/directives/menu.html'
+    };
+    return definition;
+  }).
+  directive('item', [function() {
+    var definition = {
+        restrict    : 'E'
+      , replace     : true
+      , transclude  : true
+      , templateUrl : '/directives/item.html'
+      , scope       : { 'link' : '@' }
+    };
+    return definition;
+  }]).
   directive('fancyArticle', function($timeout) {
     var definition = {
         templateUrl : '/directives/fancy-article.html'
