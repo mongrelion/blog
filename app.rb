@@ -30,8 +30,7 @@ class App < Sinatra::Base
   end
 
   get '/*' do
-    cache_control :public, max_age: 604800 # expire in one week
-    erb :index, layout: true
+    File.read File.join 'public', 'index.html'
   end
 
 
