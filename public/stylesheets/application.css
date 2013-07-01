@@ -65,6 +65,14 @@ blockquote:hover {
   background-repeat: no-repeat;
 }
 
+.social-icons .github {
+  background-image: url("/images/icons/github.png");
+}
+
+.social-icons .stackoverflow {
+  background-image: url("/images/icons/stackoverflow.png");
+}
+
 .social-icons .twitter {
   background-image: url("/images/icons/twitter.png");
 }
