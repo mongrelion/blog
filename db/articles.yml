@@ -1,3 +1,18 @@
+- :title: "Javascript events pool"
+  :date: 2013-08-22
+  :lang: english
+  :file: 'js-events-pool'
+  :tags: 'javascript'
+  :intro: |
+    "If you've lately worked with mainstream SPA frameworks (Angularjs, Emberjs, Backbonejs)
+    and related, you should know by now that things are kept in sync thanks to data binding.
+    It's a pleasure because (with some luck) you just need to setup your bindings and views
+    and data models would automatically be kept in sync.
+    Now, if you are working with a simpler application (that may not require any framework)
+    but you would like to have some binding still you don't want to load any framework
+    to your project just because you want some binding here and maybe there.
+    In Javascript you can right your own events pool and I will show you how to write it."
+
 - :title: "Improving (?) my site's performance: Part II"
   :date: 2013-07-01
   :lang: english
