@@ -1,3 +1,11 @@
+- :title: "Generating JSON in Go"
+  :date: 2013-09-13
+  :lang: english
+  :file: 'generating-json-in-go'
+  :tags: 'go,gonuts,golang'
+  :intro: |
+    Learn how to properly generate decent JSON in Go.
+
 - :title: "AngularJS, Sinatra and HTML5Mode"
   :date: 2013-09-13
   :lang: english
