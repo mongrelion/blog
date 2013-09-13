@@ -1,3 +1,11 @@
+- :title: "Cookies with cURL"
+  :date: 2013-09-13
+  :lang: english
+  :file: 'cookies-with-curl'
+  :tags: 'unix,bash,curl,api'
+  :intro: |
+    "Learn how to consume APIs and keep track of sessions with cookies."
+
 - :title: "Javascript events pool"
   :date: 2013-08-22
   :lang: english
