@@ -1,3 +1,6 @@
 /log/*
 /tmp/*
 /config/deploy.rb
+/config/puma.rb
+/.bundle/
+/vendor/
