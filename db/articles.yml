@@ -1,5 +1,14 @@
+- :title: "Calling a method defined in another file in Go"
+  :date: 2015-09-03
+  :lang: english
+  :file: 'calling-a-method-defined-in-another-file-in-go'
+  :tags: 'go,gonuts,golang'
+  :intro: |
+    Defining a method in Go in one file and calling it from another one
+    can be a little tricky when running small experiments. This is how I fixed it.
+
 - :title: "Was WhatsApp downtime on purpose?"
-  :date: 2014-24-02
+  :date: 2014-02-24
   :lang: english
   :file: 'was-whatsapp-downtime-on-purpose'
   :tags: 'tech'
