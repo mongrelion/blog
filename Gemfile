@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.7'
-gem 'rdiscount', '~> 2.1'
+gem 'rdiscount', '~> 2.2.0'
 
 group :test do
   gem 'minitest', '~> 5.0'
