@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 1.4'
+gem 'sinatra', '~> 1.4.7'
 gem 'rdiscount', '~> 2.1'
 
 group :test do
