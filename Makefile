@@ -9,4 +9,4 @@ run:
 	@docker run --rm -it -p 9292:9292 $(NAME):$(TAG)
 
 irb:
-	@docker run --rm -it --entrypoint /usr/local/bin/bundle $(IMAGE) exec irb -f
+	@docker run --rm -it --entrypoint /usr/local/bin/bundle $(IMAGE) exec irb -f -r ./deps
