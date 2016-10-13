@@ -1,4 +1,4 @@
-FROM mongrelion/ruby:2.2.2
+FROM ruby:2.3.1
 
 MAINTAINER Carlos León, mail@carlosleon.info
 
@@ -8,9 +8,10 @@ EXPOSE 9292
 
 WORKDIR /usr/src/app
 
-RUN git clone https://github.com/mongrelion/carlosleon.info . && \
-    bundle install --deployment
+COPY . /usr/src/app
 
-ENTRYPOINT ["/usr/local/bundle/bin/bundle", "exec", "puma"]
+RUN bundle install --deployment
 
-CMD ["-b", "tcp://0.0.0.0:9292"]
+ENTRYPOINT ["/usr/local/bin/bundle", "exec", "puma"]
+
+CMD ["-v", "-b", "tcp://0.0.0.0:9292"]
