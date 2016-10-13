@@ -14,6 +14,8 @@ require './models/reading'
 require './models/project'
 require './app'
 
+Encoding.default_external = "utf-8"
+
 # Preload articles and readings
 Article.all
 Reading.all
