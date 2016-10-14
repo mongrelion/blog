@@ -1,8 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    minitest (5.9.0)
+    minitest (5.9.1)
+    prometheus-client (0.6.0)
+      quantile (~> 0.2.0)
     puma (3.6.0)
+    quantile (0.2.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -19,10 +22,11 @@ PLATFORMS
 
 DEPENDENCIES
   minitest (~> 5.0)
+  prometheus-client (~> 0.6.0)
   puma (~> 3.6.0)
   rake (~> 10.1)
   rdiscount (~> 2.2.0)
   sinatra (~> 1.4.7)
 
 BUNDLED WITH
-   1.12.5
+   1.13.2

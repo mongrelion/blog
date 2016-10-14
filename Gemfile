@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.7'
 gem 'rdiscount', '~> 2.2.0'
+gem 'prometheus-client', '~> 0.6.0'
 
 group :test do
   gem 'minitest', '~> 5.0'
