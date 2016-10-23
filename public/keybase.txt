@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/mongrelion
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://carlosleon.info
+  * I am mongrelion (https://keybase.io/mongrelion) on keybase.
+  * I have a public key with fingerprint C717 8EC2 76E2 CC06 240A  9515 3F5C 8A16 C580 25E8
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101172ecd97707ac2b7d2d4fb74729a43413dc185b23b8df365889b0bc32310200a0a",
+            "fingerprint": "c7178ec276e2cc06240a95153f5c8a16c58025e8",
+            "host": "keybase.io",
+            "key_id": "3f5c8a16c58025e8",
+            "kid": "0101172ecd97707ac2b7d2d4fb74729a43413dc185b23b8df365889b0bc32310200a0a",
+            "uid": "61a12e02f2eb9dd2d77e4f500433ee19",
+            "username": "mongrelion"
+        },
+        "service": {
+            "hostname": "carlosleon.info",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1475314841,
+    "expire_in": 157680000,
+    "prev": "318623886b45be152d86cc9cd396dd05051042648451417b086b84cddb6d3b1e",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJZSFRRGMfHxoqGzBZoocW8lEWZnXPudmYyxAoKTUuiDbTpnmX0MuO9
+453rhkVgNhBGRBExLQ89zEMgREYSRGL7Q1FRBtleVEhgG5kPJXau2FuPnZfD+c7v
++3//7+O7meX3BTJ2PJi34PTRX5UZd6+dqvdt/9KWapGIzZqlUIsU5aMXjzGecMNR
+k0khCUAAoY44ZUFdB7pBEdEZYkqE6IqOgoYiK1BmFGKVIJlgFpE1FeMgAYTKSIYA
+AWAAQ8qXIqZVzZ24Y1qukKU61DGnSNc4ohRoSAFGUIWqHFEpNqBGVQyQyrFIrLET
+XoYwR4wELzBtEROP8Ki9f/D/2Xf9qJwGDYg4QBHESZAJIV3nSkQFQJFlzmHQAxPc
+sYxaLuha26p2eMy0LWlvviTiDSbl3mi9XsYYajgxOxHjtlVgWhGvqbhjuza1Y+Kz
+xnXjIS/XbY57cCMn4TGZMDEtJmYpEhq4k/BqhKAgqWt6ulDRVRkqWIH5Em+Kmw4P
+mx6h6hoG4nhleIM3OYg1JGOsEUUlHKqIYY3SIGVyUGMMqECFQEGaUFKhAnUCBIkV
+yhjRmEwgl7zG6ixbCinCplEtJBNmtWW49Q6X9l7vqcz0ZQR8E8aP83bMF5g09e/m
+dS2f+Ds71u6Sg3hba3f45JG+SR0U43TgWLd/qnFxxsC+wNVL6GHrUG660B9HlRfe
+wqL5vb3bo2teptYnA5FhsjrvnXGj8/FXxZ+EH9HIhC1NT9Q+KxmYe6vk9tXoblBV
+WCdnln7f2fHpUOfMKT+1V+13+rLAw7oz/qGKD73l0zeUHL73oDzVLw8tKxtZ1Tt5
+9vXG+nW5oc9de553rHy2blfL65LDNYud0tkv5+Qs2ZQ9cHvmolvyxheNieHNmVce
+HRhMn041zVrakz7xo7Qtd23xiqr7byqq7oOWWN6JgssVxel+39njC5LnzOyyaSXR
+VLKoMy9ncOG3Jfufvt96LF1878P55j+Gvjpt
+=KajC
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mongrelion
+
+==================================================================
+
