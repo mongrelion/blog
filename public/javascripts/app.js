@@ -1,5 +1,5 @@
 angular.
-  module('app', ['Controllers', 'Services', 'Directives']).
+  module('app', ['angulartics', 'angulartics.google.analytics', 'Controllers', 'Services', 'Directives']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 
