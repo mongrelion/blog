@@ -1,3 +1,11 @@
++++
+title = "Learning to fly"
+date = "2016-02-14T00:00:00+00:00"
+description = "Story on how I got started with free flight"
+tags = ["story", "tale", "adventure"]
+draft = true
++++
+
 I finally started taking hang gliding lessons!
 
 **How it all started**  
