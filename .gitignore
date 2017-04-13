@@ -1,13 +1,5 @@
-/log/*
-/tmp/*
-/config/deploy.rb
-/config/puma.rb
-/.bundle/
-/vendor/
-/.vagrant
-
 # Ignore Hugo's themes folder
-/hugo/themes/
+/themes/
 
 # Ignore Hugo's static generated website
-/hugo/public/
+/public/
