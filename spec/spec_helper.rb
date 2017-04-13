@@ -1,8 +1,0 @@
-require 'minitest/autorun'
-require 'minitest/pride'
-require 'yaml'
-require 'json'
-require 'rdiscount'
-require 'model'
-require 'article'
-require 'kernel'
