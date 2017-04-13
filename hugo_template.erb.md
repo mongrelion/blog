@@ -1,9 +1,14 @@
 +++
-title = "<%= @article.title %>"
-date = "<%= @article.date.rfc3339 %>"
-description = "<%= @article.intro.gsub("\n", '') %>"
-tags = <%= @article.tags.split(",") %>
+title = "<%= @reading[:title] %>"
+date = "2017-04-13T21:25:51+02:00"
+description = ""
+tags = []
 
 +++
 
-<%= File.read(File.join("hugo", "content", "articles", "#{@article.file}.md")) %>
+Author: <%= @reading[:author] %>
+
+
+Status: _<%= @reading[:status] %>_
+
+> <%= reading[:opinion] %>

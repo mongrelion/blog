@@ -1,25 +1,18 @@
-require "./deps"
+require "yaml"
 require "erb"
 
 Encoding.default_external = "utf-8"
 
-# Open the file
-# Prepend Hugo shit
-# Append the original content
-
-articles = Article.all
 template = File.read("hugo_template.erb.md")
 renderer = ERB.new(template, nil, ">")
-articles.each do |_article|
-  @article = _article
+readings = YAML.load_file("./db/readings.yml")
+readings.each do |reading|
+  @reading = reading
+  filename = reading[:title].gsub(" ", "-").gsub(/[A-Z]/) { |m| m.downcase }
+  puts "writing file #{filename}"
+  path     = File.join("hugo", "content", "readings", "#{filename}.md")
   b        = binding
-  result   = renderer.result(b)
-
-  File.open(File.join("hugo", "content", "articles", "#{@article.file}.md"), "w") do |f|
-    f.puts result
+  File.open(path, "w") do |file|
+    file.puts renderer.result(b)
   end
-
-  puts "done migrating #{@article.title}"
 end
-
-puts "all done"
