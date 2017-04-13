@@ -1,3 +1,10 @@
++++
+title = "Mejorando el rendimiento de mi sitio (¿?): Parte II"
+date = "2013-07-01T00:00:00+00:00"
+description = "Segunda y última parte de la historia de cómo mejoré el rendimiento de mi sitio escrito en Ruby"
+tags = ["ruby"]
++++
+
 Hace un par de semanas decidí hacerle unas mejoras internas a mi sitio
 para mejorar su rendimiento. Aquí explico qué fue exactamente lo que hice.
 

@@ -1,3 +1,10 @@
++++
+title = "Cookies with cURL"
+date = "2013-09-13T00:00:00+00:00"
+description = "Learn how to consume APIs and keep track of sessions with cookies."
+tags = ["unix", "bash", "curl", "api"]
++++
+
 If want to consume an API that uses sessions using [cURL], then probably you will need to make use of cookies. Using cookies with [cURL] is pretty simple.
 
 I'm going to create a simple web application using [Sinatra] for the example's sake:

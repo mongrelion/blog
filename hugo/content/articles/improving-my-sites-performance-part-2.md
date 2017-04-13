@@ -1,3 +1,10 @@
++++
+title = "Improving (?) my site's performance: Part II"
+date = "2013-07-01T00:00:00+00:00"
+description = "Second and last part of my journey into tweaking my website written in Ruby"
+tags = ["ruby"]
++++
+
 A couple of weeks ago I decided to internally improve my website.
 Here I explain exactly what is it that I did to do so.
 Some of these changes include ruby memoize/memoization and Sinatra Caching.

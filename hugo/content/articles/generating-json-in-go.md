@@ -1,3 +1,10 @@
++++
+title = "Generating JSON in Go"
+date = "2013-09-13T00:00:00+00:00"
+description = "Learn how to properly generate decent JSON in Go."
+tags = ["go", "gonuts", "golang"]
++++
+
 Say you have a custom type defined like this:
 
 <pre class="prettyprint">

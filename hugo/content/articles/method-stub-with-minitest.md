@@ -1,3 +1,10 @@
++++
+title = "Method stub with MiniTest"
+date = "2012-05-24T00:00:00+00:00"
+description = "MiniTest's batteries include method stubbing!"
+tags = ["ruby", " test", " testing", " minitest"]
++++
+
 [MiniTest] is a testing tool that provides the necessary resources to make your
 test suite a complete stack, supporting TDD, BDD, mocking and benchmarking. It
 comes by default with Ruby 1.9.x and is also available for Ruby 1.8.7.

@@ -1,3 +1,10 @@
++++
+title = "Backbone.js best practices for n00bs"
+date = "2012-05-31T00:00:00+00:00"
+description = "The other day I was looking for some Backbone.js tutorials on the internetz,something that could give me some clue about how to properly structure a webapplication using this framework and I found a not that old (one year and a half now)blog post talking about how to do a trivial Backbone.js application."
+tags = ["js", " javascript", " backbone", " backbonejs", " backbone.js", " coffeescript"]
++++
+
 The other day I was looking for some [Backbone.js] tutorials on the internetz,
 something that could give me some clue about how to properly structure a web
 application using this framework and I found a not that old (one year and a half now)

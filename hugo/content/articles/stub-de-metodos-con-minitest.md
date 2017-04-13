@@ -1,3 +1,10 @@
++++
+title = "Stub de métodos con MiniTest"
+date = "2012-05-24T00:00:00+00:00"
+description = "MiniTest viene con baterías incluídas ¡Y las baterías vienen con stub de métodos!"
+tags = ["ruby", " test", " testing", " minitest"]
++++
+
 [MiniTest] es una herramienta para pruebas que viene con todos los juguetes
 necesarios para nuestro conjunto de pruebas (unitarias, de integración, etc),
 soportando TDD, BDD, mocking y benchmarking. Viene por defecto con Ruby 1.9.x

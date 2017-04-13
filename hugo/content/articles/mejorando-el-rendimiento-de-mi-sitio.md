@@ -1,3 +1,10 @@
++++
+title = "Mejorando el rendimiento de mi sitio (¿?): Parte I"
+date = "2013-03-24T00:00:00+00:00"
+description = "La historia de cómo mejoré el rendimiento de mi sitio escrito en Ruby"
+tags = ["ruby"]
++++
+
 Cuando finalmente decidí sacar un blog, le dí una merecida oportunidad a Jekyll
 y a Octopress. Tienen buenos plugins, las estrategias para desplegar a producción
 son "fáciles" y tal, pero de alguna manera, no me sentía a gusto. Ahí fue cuando

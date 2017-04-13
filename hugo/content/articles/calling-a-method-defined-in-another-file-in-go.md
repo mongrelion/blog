@@ -1,3 +1,10 @@
++++
+title = "Calling a method defined in another file in Go"
+date = "2015-09-03T00:00:00+00:00"
+description = "Defining a method in Go in one file and calling it from another one can be a little tricky when running small experiments. This is how I fixed it."
+tags = ["go", "gonuts", "golang"]
++++
+
 Calling a method defined in another file in Go with `go run`
 ---
 

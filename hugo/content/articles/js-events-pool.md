@@ -1,3 +1,10 @@
++++
+title = "Javascript events pool"
+date = "2013-08-22T00:00:00+00:00"
+description = "Developing your own EventsPool is easy"
+tags = ["javascript", "js"]
++++
+
 If you've lately worked with mainstream SPA frameworks ([Angularjs], [Emberjs], [Backbonejs])
 and related, you should know by now that things are kept in sync thanks to data binding.  
 It's a pleasure because (with some luck) you just need to setup your bindings and views

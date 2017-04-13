@@ -1,3 +1,10 @@
++++
+title = "AngularJS, Sinatra and HTML5Mode"
+date = "2013-09-13T00:00:00+00:00"
+description = "In this post I explain how to successfully enable Sinatra for servingSingle Page Applications with AngularJS with HTML5 mode enabled."
+tags = ["javascript", "js", "angularjs", "angular", "ng", "ruby", "sinatra", "html5", "html5mode"]
++++
+
 [Sinatra], [AngularJS] and HTML5Mode
 ===
 

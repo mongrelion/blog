@@ -1,3 +1,10 @@
++++
+title = "Improving (?) my site's performance: Part I"
+date = "2013-03-24T00:00:00+00:00"
+description = "Journey into tweaking my website written in Ruby"
+tags = ["ruby"]
++++
+
 When I decided to finally come up with a blog, I gave [Jekyll] and [Octopress]
 a try. Nice plugins, "easy" deployment strategies and what not, but somehow
 I could not cope with them. That's why I decided to write my own. At last I
