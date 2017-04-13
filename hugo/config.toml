@@ -15,4 +15,5 @@ googleanalytics = "UA-77086456-2"
   landingpageredirecturl = "/about"
 
 [params.links]
-  about = "/about"
+  about = "about/"
+  blog  = "articles/"
