@@ -5,3 +5,9 @@
 /.bundle/
 /vendor/
 /.vagrant
+
+# Ignore Hugo's themes folder
+/hugo/themes/
+
+# Ignore Hugo's static generated website
+/hugo/public/
