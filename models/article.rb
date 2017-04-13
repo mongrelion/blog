@@ -18,7 +18,7 @@ class Article < Model
   end
 
   def content
-    path = File.join(root, 'articles', "#{file}.markdown")
+    path = File.join(root, "hugo", "content", "articles", "#{file}.md")
     if file and File.exists?(path)
       @content ||= RDiscount.new(File.read path).to_html
     end

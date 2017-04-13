@@ -3,9 +3,13 @@ require "erb"
 
 Encoding.default_external = "utf-8"
 
+# Open the file
+# Prepend Hugo shit
+# Append the original content
+
 articles = Article.all
 template = File.read("hugo_template.erb.md")
-renderer = ERB.new(template)
+renderer = ERB.new(template, nil, ">")
 articles.each do |_article|
   @article = _article
   b        = binding

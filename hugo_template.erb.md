@@ -1,9 +1,9 @@
 +++
-Categories = []
-Description = '<%= @article.intro.gsub("\n", '') %>'
-Tags = <%= @article.tags.split(",") %>
-date = "<%= @article.date.rfc3339 %>"
 title = "<%= @article.title %>"
+date = "<%= @article.date.rfc3339 %>"
+description = "<%= @article.intro.gsub("\n", '') %>"
+tags = <%= @article.tags.split(",") %>
+
 +++
 
-<%= File.read(File.join("articles", "#{@article.file}.markdown")) %>
+<%= File.read(File.join("hugo", "content", "articles", "#{@article.file}.md")) %>
