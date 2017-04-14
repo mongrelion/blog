@@ -1,5 +1,5 @@
 IMAGE := mongrelion/blog
-TAG   := 2.0.0
+TAG   := 2.1.1
 NAME  := $(IMAGE):$(TAG)
 
 site:
