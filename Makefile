@@ -1,5 +1,5 @@
 IMAGE  := mongrelion/blog
-TAG    := 2.1.1
+TAG    := $$(git log -1 --pretty=%H)
 NAME   := $(IMAGE):$(TAG)
 LATEST := $(IMAGE):latest
 
