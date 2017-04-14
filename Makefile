@@ -1,6 +1,7 @@
-IMAGE := mongrelion/blog
-TAG   := 2.1.1
-NAME  := $(IMAGE):$(TAG)
+IMAGE  := mongrelion/blog
+TAG    := 2.1.1
+NAME   := $(IMAGE):$(TAG)
+LATEST := $(IMAGE):latest
 
 site:
 	@echo "-> building site with Hugo"
@@ -17,8 +18,16 @@ image:
 		.
 
 push:
-	@echo "-> pusing container image $(NAME) to DockerHUB"
+	@echo "-> pusing container image $(NAME) to dockerhub"
 	@docker push $(NAME)
+
+latest:
+	@echo "-> aliasing container image $(NAME) to $(LATEST)"
+	@docker tag $(NAME) $(LATEST)
+
+push-latest:
+	@echo "-> pusing container image $(LATEST) to dockerhub"
+	@docker push $(LATEST)
 
 login:
 	@echo "-> logging into DockerHUB"
