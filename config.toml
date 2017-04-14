@@ -1,4 +1,4 @@
-baseurl         = "http://carlosleon.info"
+baseurl         = "http://carlosleon.info/"
 title           = "Carlos León"
 theme           = "herring-cove"
 googleanalytics = "UA-77086456-2"
