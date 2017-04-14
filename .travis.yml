@@ -10,6 +10,6 @@ services:
 
 script:
   - make site
-  - make image
+  - make image TAG=$TRAVIS_COMMIT
   - make login
-  - make push
+  - make push TAG=$TRAVIS_COMMIT
