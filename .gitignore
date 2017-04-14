@@ -1,5 +1,2 @@
-# Ignore Hugo's themes folder
-/themes/
-
 # Ignore Hugo's static generated website
 /public/
