@@ -21,41 +21,37 @@ about how to stub methods using this tool.
 So we basically have two options. The first approach is to do something like
 [Aaron Patterson] (a.k.a. [@tenderlove]) does on his [PeepCode]'s [screencast].
 It's something like this:
-<pre class="prettyprint">
-  <code>
-    klass = Class.new User do
-      define_method(:confirmed?) { true }
-    end
-    user = klass.new
-    user.confirmed?.must_equal true
-  </code>
-</pre>
+```ruby
+klass = Class.new User do
+  define_method(:confirmed?) { true }
+end
+user = klass.new
+user.confirmed?.must_equal true
+```
 
-What he basically is doing here is redifining the **User** class and assigning that
-redefinition to the variable **klass**. Within the definition block, he is also
-redifininig the **confirmed?** instance method for that class, so that when it is
-called, it returns whatever it is inside the block given to the **define_method**
-method, which in this case is a _true_ value.
+What he basically is doing here is redifining the `User` class and assigning that
+redefinition to the variable `klass`. Within the definition block, he is also
+redifininig the `confirmed?` instance method for that class, so that when it is
+called, it returns whatever it is inside the block given to the `define_method`
+method, which in this case is a `true` value.
 
 The second way to do this, which is cleaner, niftier, fancier and less complex
 is by using the MiniTest's stub method:
-<pre class="prettyprint">
-  <code>
-    User.stub :confirmed?, true do
-      user = User.first
-      user.confirmed?.must_equal true
-    end
-  </code>
-</pre>
+```ruby
+User.stub :confirmed?, true do
+  user = User.first
+  user.confirmed?.must_equal true
+end
+```
 
 Clear, precise and concise. This magic was not available until version 3.0.0
 when they added support to this on this [commit]. Once again MiniTest impresses
 me by its incredible super cow powers.
 
-  [MiniTest]: http://github.com/seattlerb/minitest
-  [documentation]: http://docs.seattlerb.org/minitest/
-  [Aaron Patterson]: http://tenderlovemaking.com/
-  [@tenderlove]: http://twitter.com/tenderlove
-  [PeepCode]: http://peepcode.com
-  [screencast]: https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails
-  [commit]: https://github.com/seattlerb/minitest/commit/37e1a04573f1047a1772a21cbfe48823d2c27d7e
+[MiniTest]: http://github.com/seattlerb/minitest
+[documentation]: http://docs.seattlerb.org/minitest/
+[Aaron Patterson]: http://tenderlovemaking.com/
+[@tenderlove]: http://twitter.com/tenderlove
+[PeepCode]: http://peepcode.com
+[screencast]: https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails
+[commit]: https://github.com/seattlerb/minitest/commit/37e1a04573f1047a1772a21cbfe48823d2c27d7e

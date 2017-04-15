@@ -5,14 +5,11 @@ description = "Defining a method in Go in one file and calling it from another o
 tags = ["go", "gonuts", "golang"]
 +++
 
-Calling a method defined in another file in Go with `go run`
----
-
 If you have two files in Go that look like this:
 
 **a.go**
 
-```
+```go
 package main
 
 func main() {
@@ -22,7 +19,7 @@ func main() {
 
 **b.go**
 
-```
+```go
 func foo() string {
   return "Hello, foo!"
 }
@@ -31,7 +28,7 @@ func foo() string {
 
 If you `go build .` the project, it completes without errors and the binary file is generated:
 
-```
+```bash
 $ ls -l
 a.go
 b.go
@@ -40,20 +37,20 @@ foo
 
 And it works:
 
-```
-./foo
+```bash
+$ ./foo
 Hello, foo!
 ```
 
 But when you're developing you want to run the project right from Go instead of compiling and then running the binary. The tool for doing this is `run` and your gut will dictate you something like:
 
-```
-go run a.go
+```bash
+$ go run a.go
 ```
 
 But the output rather than being what you expected is somewhat more like:
 
-```
+```bash
 # command-line-arguments
 ./a.go:4: undefined: foo
 ```
@@ -61,11 +58,11 @@ But the output rather than being what you expected is somewhat more like:
 
 `go build` is smart enough to figure out by itself that the function `foo` is defined in one of the `.go` files in our directory/package but `go run` is not as smart.
 
-THE FIX
+#### THE FIX
 
 Simply specify all the files involved in your "run" and it will just work:
 
-```
-go run a.go b.go
+```bash
+$ go run a.go b.go
 Hello, foo!
 ```

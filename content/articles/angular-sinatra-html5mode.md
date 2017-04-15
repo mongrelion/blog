@@ -1,7 +1,7 @@
 +++
 title = "AngularJS, Sinatra and HTML5Mode"
 date = "2013-09-13T00:00:00+00:00"
-description = "In this post I explain how to successfully enable Sinatra for servingSingle Page Applications with AngularJS with HTML5 mode enabled."
+description = "How to enable Sinatra for serving Single Page Applications with AngularJS with HTML5 mode enabled"
 tags = ["javascript", "js", "angularjs", "angular", "ng", "ruby", "sinatra", "html5", "html5mode"]
 +++
 
@@ -10,81 +10,73 @@ tags = ["javascript", "js", "angularjs", "angular", "ng", "ruby", "sinatra", "ht
 
 ---
 
-##The [Sinatra] Part
+## The [Sinatra] Part
+```ruby
+get "/*" do
+  File.read(File.join("public", "index.html"))
+end
+```
 
-<pre class="prettyprint">
-  <code>
-  get '/*' do
-    File.read File.join 'public', 'index.html'
+Put this **at the bottom** of your application file and this will serve your
+[AngularJS] application at any endpoint. This, of course, will read the
+`public/index.html` file every time that you head that endpoint. Better if you
+**memoize** it.
+
+```ruby
+get "/*" do
+  render_index
+end
+
+def render_index
+  @index ||= File.read(File.join("public", "index.html"))
+end
+```
+
+### Important note
+Any other route that you register after this snippet won't be triggered as `"/*"` matches **everything**. Put any route definition before it.
+
+A decent example would look something like this:
+
+```ruby
+class MyApp < Sinatra::Base
+  # - Get list of countries - #
+  get "/api/v1/countries" do
+    # whatever
   end
-  </code>
-</pre>
 
+  # - Get a single country - #
+  get "/api/v1/countries/:id" do
+    # whatever
+  end
 
-Put this **at the bottom** of your application file and this will serve your [AngularJS] application at any endpoint. This, of course, will read the *public/index.html* file every time that you head that endpoint. Better if you **memoize** it.
-
-<pre class="prettyprint">
-  <code>
-  get '/*' do
+  # - Point anything else to the AngularJS app - #
+  get "/*" do
     render_index
   end
 
   def render_index
-    @index ||= File.read File.join 'public', 'index.html'
+    @index ||= File.read(File.join("public", "index.html")
   end
-  </code>
-</pre>
-
-###Important note
-Any other route that you register after this snippet won't be triggered as "/*" matches **everything**. Put any route definition before it.
-
-An decent example would look something like this:
-
-<pre class="prettyprint">
-  <code>
-  class MyApp < Sinatra::Base
-    # - Get list of countries - #
-    get '/api/v1/countries' do
-      # whatever
-    end
-
-    # - Get a single country - #
-    get '/api/v1/countries/:id' do
-      # whatever
-    end
-
-    # - Point anything else to the AngularJS app - #
-    get '/*' do
-      render_index
-    end
-
-    def render_index
-      @index ||= File.read File.join 'public', 'index.html'
-    end
-  end
-  </code>
-</pre>
-
+end
+```
 ---
 
-##The [AngularJS] part
+## The [AngularJS] part
 
 Put this in your AngularJS application definition and you should be ready to go:
 
-<pre class="prettyprint">
-  <code>
-  (function() {
-    'use strict';
+```javascript
+(function() {
+  "use strict";
 
-    var deps = [];
-    angular.module('fooApp', deps).
-      config(['$locationProvider', function($locationProvider) {
-        $locationProvider.html5Mode(true);
-      }]);
+  var deps = [];
+  angular.module("fooApp", deps).
+    config(["$locationProvider", function($locationProvider) {
+      $locationProvider.html5Mode(true);
+    }]);
 
-  }());
-  </code>
-</pre>
+}());
+```
 
 [Sinatra]: http://sinatrarb.com/
 [AngularJS]: http://angularjs.org
