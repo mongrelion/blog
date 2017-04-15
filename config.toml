@@ -25,3 +25,4 @@ pygmentsstyle      = "autumn"
 [taxonomies]
 article = "articles"
 reading = "readings"
+tag     = "tags"
