@@ -1,7 +1,12 @@
-baseurl         = "http://carlosleon.info/"
-title           = "Carlos León"
-theme           = "herring-cove"
+# Site's base config
+baseurl = "http://carlosleon.info/"
+title   = "Carlos León"
+theme   = "herring-cove"
+
+# Google Analytics code
 googleanalytics = "UA-77086456-2"
+
+# Disqus short name
 disqusshortname = "mongrelion"
 
 # Server-side syntax highlighting config
