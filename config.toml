@@ -4,6 +4,10 @@ theme           = "herring-cove"
 googleanalytics = "UA-77086456-2"
 disqusshortname = "mongrelion"
 
+# Server-side syntax highlighting config
+pygmentscodefences = true
+pygmentsstyle      = "autumn"
+
 [params]
   profilepicture = "/img/profile.jpg"
   description    = "Cloud Expert"
