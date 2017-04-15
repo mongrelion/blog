@@ -4,17 +4,19 @@ theme           = "herring-cove"
 googleanalytics = "UA-77086456-2"
 
 [params]
-  profilepicture         = "/img/profile.jpg"
-  description            = "Cloud Expert"
-  author                 = "Carlos León"
-  authorname             = "Carlos León"
-  twitter                = "https://twitter.com/mongrelion"
-  github                 = "https://github.com/mongrelion"
-  linkedin               = "https://linkedin.com/in/mongrelion"
-  enablelandingpage      = true
-  landingpageredirecturl = "/about"
+  profilepicture = "/img/profile.jpg"
+  description    = "Cloud Expert"
+  author         = "Carlos León"
+  authorname     = "Carlos León"
+  twitter        = "https://twitter.com/mongrelion"
+  github         = "https://github.com/mongrelion"
+  linkedin       = "https://linkedin.com/in/mongrelion"
 
 [params.links]
   about    = "about/"
   blog     = "articles/"
   readings = "readings/"
+
+[taxonomies]
+article = "articles"
+reading = "readings"
