@@ -2,6 +2,7 @@ baseurl         = "http://carlosleon.info/"
 title           = "Carlos León"
 theme           = "herring-cove"
 googleanalytics = "UA-77086456-2"
+disqusshortname = "mongrelion"
 
 [params]
   profilepicture = "/img/profile.jpg"
