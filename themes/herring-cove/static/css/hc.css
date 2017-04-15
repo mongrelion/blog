@@ -435,6 +435,7 @@ img
   color: #b6b6b6;
   border-bottom: 2px #d90006 solid;
   padding: 10px;
+  display: inline-block;
 }
 
 #article .tags a.tag:hover
