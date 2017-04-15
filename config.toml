@@ -11,8 +11,6 @@ pygmentsstyle      = "autumn"
 [params]
   profilepicture = "/img/profile.jpg"
   description    = "Cloud Expert"
-  author         = "Carlos León"
-  authorname     = "Carlos León"
   twitter        = "https://twitter.com/mongrelion"
   github         = "https://github.com/mongrelion"
   linkedin       = "https://linkedin.com/in/mongrelion"
