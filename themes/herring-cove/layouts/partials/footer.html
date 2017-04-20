@@ -1,13 +1,11 @@
-    <footer>
+<footer>
+  <p class="text-muted credit">{{ with .Site.Params.Copyright }}{{.}}{{ else }}&copy; {{now.Format "2006"}}. All rights reserved. {{end}}</p>
+</footer>
 
-        <p class="text-muted credit">{{ with .Site.Params.Copyright }}{{.}}{{ else }}&copy; {{now.Format "2006"}}. All rights reserved. {{end}}</p>
-    </footer>
- <!-- Bootstrap core JavaScript-->
-    <script src="{{ .Site.BaseURL }}/js/jquery-1.10.2.min.js"></script>
-    <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
-    <script src="{{ .Site.BaseURL }}/js/bootstrap.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}/js/hc.js"></script>
-    {{ template "_internal/google_analytics_async.html" . }}
+{{ template "theme/partials/javascripts.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
+</div><!-- close #article (opens in header.html) -->
+</div><!-- close .container (opens in header.html) -->
+</div><!-- close #wrapper (opens in header.html) -->
 </body>
-
 </html>
