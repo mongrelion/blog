@@ -20,10 +20,23 @@ pygmentsstyle      = "autumn"
   github         = "https://github.com/mongrelion"
   linkedin       = "https://linkedin.com/in/mongrelion"
 
-[params.links]
-  about    = "about/"
-  blog     = "articles/"
-  readings = "readings/"
+[[menu.left]]
+  name = "about"
+  identifier = "about"
+  url = "/about/"
+  weight = -4
+
+[[menu.left]]
+  name = "blog"
+  identifier = "blog"
+  url = "/articles/"
+  weight = -3
+
+[[menu.left]]
+  name = "readings"
+  identifier = "readings"
+  url = "/readings/"
+  weight = -1
 
 [taxonomies]
 article = "articles"
