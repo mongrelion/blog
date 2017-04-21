@@ -33,6 +33,12 @@ pygmentsstyle      = "autumn"
   weight = -3
 
 [[menu.left]]
+  name = "talks"
+  identifier = "talks"
+  url = "/talks/"
+  weight = -2
+
+[[menu.left]]
   name = "readings"
   identifier = "readings"
   url = "/readings/"
