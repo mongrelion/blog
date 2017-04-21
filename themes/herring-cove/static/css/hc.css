@@ -446,7 +446,7 @@ img
 #article h4.year-group
 {
   font-weight: bold;
-  text-align: right;
+  text-align: left;
   font-size: 2em;
 }
 
@@ -819,4 +819,5 @@ span.time
   span.time {
     display: none;
   }
+
 }
