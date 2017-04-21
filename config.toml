@@ -29,7 +29,7 @@ pygmentsstyle      = "autumn"
 [[menu.left]]
   name = "blog"
   identifier = "blog"
-  url = "/articles/"
+  url = "/blog/"
   weight = -3
 
 [[menu.left]]
@@ -39,6 +39,6 @@ pygmentsstyle      = "autumn"
   weight = -1
 
 [taxonomies]
-article = "articles"
+blog    = "blog"
 reading = "readings"
 tag     = "tags"

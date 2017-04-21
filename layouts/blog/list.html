@@ -1,0 +1,13 @@
+{{ template "theme/partials/header.html" . }}
+<div id="article">
+  <h1>Blog</h1>
+  <ul class="posts">
+    {{ range .Data.Pages }}
+    <li>
+      <span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="time pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+      </span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "theme/partials/footer.html" . }}
