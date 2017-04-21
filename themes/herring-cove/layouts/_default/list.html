@@ -1,6 +1,7 @@
 {{ template "theme/partials/header.html" . }}
 <div id="article">
   <h1>{{ .Title }}</h1>
+  <hr />
   <ul class="posts">
     {{ range .Data.Pages }}
     <li>
