@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-
 body
 {
   color:#2c3e50;
@@ -444,6 +443,13 @@ img
   background-color: #d90006;
 }
 
+#article h4.year-group
+{
+  font-weight: bold;
+  text-align: right;
+  font-size: 2em;
+}
+
 .user-social
 {
   color:#c4c4c4;
@@ -792,13 +798,25 @@ span.time
    display:block !important;
   }
 
-
-
-
-.showcase-wrapper {
-  width: 100%;
-  height: 50%;
-  font-size: small;
+  .showcase-wrapper {
+    width: 100%;
+    height: 50%;
+    font-size: small;
+  }
 }
 
+@media screen and (max-width: 767px)  {
+
+  #article h4.year-group
+  {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  span.time {
+    display: none;
+  }
 }

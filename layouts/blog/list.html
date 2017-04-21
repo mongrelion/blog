@@ -1,8 +1,10 @@
 {{ template "theme/partials/header.html" . }}
 <div id="article">
   <h1>Blog</h1>
+  {{ range .Data.Pages.GroupByDate "2006" }}
+  <h4 class="year-group">{{ .Key }}</h4>
   <ul class="posts">
-    {{ range .Data.Pages }}
+    {{ range .Pages }}
     <li>
       <span>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="time pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
@@ -10,4 +12,5 @@
     </li>
     {{ end }}
   </ul>
+  {{ end }}
   {{ template "theme/partials/footer.html" . }}
