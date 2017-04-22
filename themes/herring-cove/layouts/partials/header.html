@@ -53,10 +53,10 @@
           {{ end }}
           <hr />
           <div id="social-wrapper">
-            {{ with .Site.Params.twitter }}<li> <a href="{{.}}"><i class="fa fa-twitter-square"></i> @twitter</a></li>{{end}}
-            {{ with .Site.Params.linkedin }}<li> <a href="{{ . }}"><i class="fa fa-linkedin-square"></i> linkedin</a> </li>{{end}}
-            {{ with .Site.Params.facebook }}<li> <a href="{{ . }}"><i class="fa fa-facebook-square"></i> facebook</a></li>{{end}}
-            {{ with .Site.Params.github }}<li> <a href="{{ . }}"><i class="fa fa-github-square"></i> github</a> </li>{{end}}
+            {{ with .Site.Params.twitter }}<li> <a href="{{.}}" target="_blank"><i class="fa fa-twitter-square"></i> @twitter</a></li>{{end}}
+            {{ with .Site.Params.linkedin }}<li> <a href="{{ . }}" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin</a> </li>{{end}}
+            {{ with .Site.Params.facebook }}<li> <a href="{{ . }}" target="_blank"><i class="fa fa-facebook-square"></i> facebook</a></li>{{end}}
+            {{ with .Site.Params.github }}<li> <a href="{{ . }}" target="_blank"><i class="fa fa-github-square"></i> github</a> </li>{{end}}
           </div>
         </ul>
       </div>
