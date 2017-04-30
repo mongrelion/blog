@@ -19,7 +19,8 @@ But that's enough for the introduction of [MiniTest] since this is more to talk
 about how to stub methods using this tool.
 
 So we basically have two options. The first approach is to do something like
-[Aaron Patterson] (a.k.a. [@tenderlove]) does on his [PeepCode]'s [screencast].
+[Aaron Patterson](http://tenderlovemaking.com/) (a.k.a. [@tenderlove]) does on
+his [PeepCode]'s [screencast].
 It's something like this:
 ```ruby
 klass = Class.new User do
@@ -50,7 +51,6 @@ me by its incredible super cow powers.
 
 [MiniTest]: http://github.com/seattlerb/minitest
 [documentation]: http://docs.seattlerb.org/minitest/
-[Aaron Patterson]: http://tenderlovemaking.com/
 [@tenderlove]: http://twitter.com/tenderlove
 [PeepCode]: http://peepcode.com
 [screencast]: https://peepcode.com/products/play-by-play-tenderlove-ruby-on-rails

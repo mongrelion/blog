@@ -23,7 +23,7 @@ site to make it a little bit fancier and a little bit more "original".
 I also gave a try to [Mina] to deploy my website to my VPS. As with [Capistrano],
 you can run remote commands on the server side plus the ruby on your scripts
 doing any kind of magic you can spell. It even has [built-in support] for [Bundler],
-[Foreman], [Git], [Rails], [Rake], [rbenv] (yay!), [rvm] and [Whenever].  
+[Foreman], [Git], [Rails], [Rake], [rbenv], [rvm] and [Whenever].  
 Because [Capistrano] has been on the market for more time, there is a lot more
 documentation to read, although the [Mina] documentation is very fancy, which
 makes it easier to start than with [Capistrano], which in my opinion is a little
