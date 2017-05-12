@@ -1,0 +1,12 @@
+{{ template "theme/partials/header.html" . }}
+<div id="article">
+  <h1>Tags</h1>
+  <hr />
+  <ul class="posts">
+    {{ range .Pages }}
+    <li>
+      <span><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "theme/partials/footer.html" . }}
