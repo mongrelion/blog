@@ -8,7 +8,7 @@ draft = true
 
 I finally started taking hang gliding lessons!
 
-**How it all started**  
+#### How it all started
 Even though I would like to I can't really pinpoint a moment in time where I made a
 decision to learn to fly. I remember, though, that on the early days I saw on the Discovery Kids
 channel a program talking about people flying on balloons. I was impressed. I loved the
@@ -36,7 +36,7 @@ Internet on how to get into the sport. I look for gear prices. I find out that a
 fancy one) starts from US$35.000. I laugh. I close the tab. I forget about it: there is no way in the
 world that I will make 35 grand in the upcoming two years to start doing anything about it.
 
-**Looking for options**  
+#### Looking for options
 But I still wanted to fly. I had already had the experience of free flight and I loved it. I needed it. Hey, I'm
 living in Europe now, the mountains are not as far anymore and my numbers are doing better than before,
 so perhaps I can now look into some sort of free flight sport that is not as expensive. I remembered
@@ -55,7 +55,7 @@ find a school in the south of The Netherlands with a decently looking website. I
 I pay for the training and off I go to my first training session (after three months or so of waiting
 because when I paid it was not yet flying season).
 
-**The first experience**  
+#### The first experience
 Boy, what a disappointment. Not on the sport, no. On myself. We're talking about years of build up, years of
 craving to finally get to fly on my own. Among the things that I read on Internet about the sport someone said
 something like «if you can ride a bike you can hang glide». What they meant by that is that if you have the
@@ -115,7 +115,7 @@ B1, B2 and B3 level. I'm going to briefly explain what it all means:
       you are just a pro. If you would like to make a flight from, just to say an example, Amsterdam to Utrecht (which is
       legally not allowed) then you would have to have a B3 license.
 
-**A taste of mountain flying**  
+#### A taste of mountain flying
 I went with my current employer to the DockerCon Barcelona 2015. I started working for them since July 2015
 and this job ended up something that I had not expected at all, in a good way. Here we do R&D heavily on
 distributed computing technologies and on better software delivery processes. This has been a topic of my
@@ -172,14 +172,14 @@ process of assessing the situation on my own, making the decision to take of, co
 and all that. The experience felt a little crippled. Don't get me wrong: I liked it, but let's say that I prefer
 to fly on my own.
 
-**The training hill**  
+#### The training hill
 So we went the next morning to the training hill. Some warming up and there I was with the school wing showing my skills
 demonstrating that I was a good student. The instructor corrected a habit apparently learned by flying on the winch
 which was to not let the wing fly earlier. He also taught me how to flare. So far I had ran four races and performed good.
 Then the instructor told me: ok, one more. If you do good I take you up to the mountain so don't screw it up!
 Haha, no pressure.
 
-**Going up the mountain**  
+#### Going up the mountain
 I did good and we packed up and drove up. Me and the rest of the pilots rigged up, got ready and in line,
 waiting for the wind to get better because at that moment we had a small yet annoying tail wind that wouldn't allow us to
 take off. So we waited. And waited. And waited a little more. Then a little more and then it stroke us all when the
@@ -194,7 +194,7 @@ from the north, which meant that I was not going to be able to fly anymore for t
 one, which meant that that was it for my hang gliding adventure in Spain, not without the promise of coming back in February
 to finish my mountain training.
 
-**A word about safety**
+#### A word about safety
 I am afraid of heights. Badly. I feel butterflies if I put my head out of a window from a fourth floor and above.
 But a hang glider is a very sophisticated device with a lot of aeronautical engineering around it. I mean, the first
 model was designed by a spacial engineer at the NASA just so you get an idea on what are the fundaments of these devices.
@@ -206,7 +206,7 @@ level of stress that is just not meant for it.
 I, personally, am more interested in chill flying and cross country flying more than in aerobatics and more dangerous stuff.
 My adrenaline thirst is satiated right at the moment of the take off. After that, I'm good to go and just relax and enjoy the view.
 
-**You should also try it out**
+#### You should also try it out
 Hang gliding as a sport is pretty well defined. There is a whole world around the flying equipment, the different flying
 techniques, the different types of wing and flying instruments, places where you are and you are not allowed to fly, etc.
 But unfortunatelly is a sport that does not get a lot of attention from people, perhaps because people think that this

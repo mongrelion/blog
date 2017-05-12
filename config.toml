@@ -44,6 +44,12 @@ pygmentsstyle      = "autumn"
   url = "/readings/"
   weight = -1
 
+[[menu.left]]
+  name = "hang gliding"
+  identifier = "hg"
+  url = "/hg/"
+  weight = 0
+
 [taxonomies]
 blog    = "blog"
 reading = "readings"
