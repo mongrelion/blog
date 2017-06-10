@@ -1,0 +1,22 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+
+metadata:
+  name: blog
+  namespace: website
+
+spec:
+  replicas: 1
+
+  template:
+    metadata:
+      labels:
+        app: blog
+
+    spec:
+      containers:
+        - name: blog
+          image: mongrelion/blog:latest
+          ports:
+            - containerPort: 80
