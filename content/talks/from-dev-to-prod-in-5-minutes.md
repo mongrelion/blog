@@ -25,3 +25,8 @@ and a few other tips so that they don't panic.
 
 ### Slides
 {{< speakerdeck f024be5e898b44dd83f99afd6fb8a6c3 >}}
+
+### Videos
+* [QCon London 2017](https://www.infoq.com/presentations/embracing-containers)
+* [DevOps Pro Vilnius 2017](https://www.youtube.com/watch?v=-tx4PNGTrwI)
+* [Dutch Container Day 2016](https://www.youtube.com/watch?v=0mYVGSO43YI)
