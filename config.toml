@@ -1,5 +1,5 @@
 # Site's base config
-baseurl = "https://carlosleon.info/"
+baseurl = "//carlosleon.info/"
 title   = "Carlos León"
 theme   = "herring-cove"
 
