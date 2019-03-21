@@ -3,6 +3,8 @@ TAG    := $$(git log -1 --pretty=%H)
 NAME   := $(IMAGE):$(TAG)
 LATEST := $(IMAGE):latest
 
+dev: clean site image test
+
 site:
 	@echo "-> building site with Hugo"
 	@docker run                \
@@ -11,7 +13,7 @@ site:
 		-v $$PWD:/usr/share/hugo \
 		mongrelion/hugo:0.20.1
 
-image:
+image: site
 	@echo "-> building container image $(NAME)"
 	@docker build \
 		-t $(NAME)  \
@@ -35,3 +37,6 @@ login:
 
 test:
 	@docker run --rm -it -p 80:80 $(NAME)
+
+clean:
+	@rm -rf public/
