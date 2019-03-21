@@ -5,7 +5,7 @@
   <div class="tags">
     {{ $baseUrl := .Site.BaseURL }}
     {{ range .Params.tags }}
-      <a class="tag" href="{{ $baseUrl }}tags/{{ . | urlize }}">{{ . }}</a>
+      <a class="tag" href="{{ $baseUrl }}/tags/{{ . | urlize }}">{{ . }}</a>
     {{ end }}
   </div>
 
