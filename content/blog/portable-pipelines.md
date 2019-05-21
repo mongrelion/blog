@@ -114,48 +114,48 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        go build -o dist/app
+        sh "go build -o dist/app"
       }
     }
 
     stage('test') {
       steps {
-        go test -v .
+        sh "go test -v ."
       }
     }
 
     stage('deploy-staging') {
       steps {
-        scp ./dist/app:deploy@my.staging.env.example.org:/home/deploy/app
-        ssh deploy@my.staging.env.example.org systemctl restart app
+        sh "scp ./dist/app:deploy@my.staging.env.example.org:/home/deploy/app"
+        sh "ssh deploy@my.staging.env.example.org systemctl restart app"
       }
     }
 
     stage('test-staging') {
       steps {
-        godog
+        sh "godog"
       }
     }
 
     stage('deploy-production') {
       steps {
-        scp ./dist/app:deploy@example.org:/home/deploy/app
-        ssh deploy@example.org systemctl restart app
+        sh "scp ./dist/app:deploy@example.org:/home/deploy/app"
+        sh "ssh deploy@example.org systemctl restart app"
       }
     }
 
     stage('test-production') {
       steps {
         # test that TLS is not broken
-        curl --head https://example.org
+        sh "curl --head https://example.org"
         # test that the login page still loads
-        curl https://example.org/login
+        sh "curl https://example.org/login"
       }
     }
 
     stage('notify') {
       steps {
-        curl -X POST -d '{"message":"deployment successful"}' https://notifications.example.org
+        sh "curl -X POST -d '{\"message\":\"deployment successful\"}' https://notifications.example.org"
       }
     }
   }
@@ -208,43 +208,43 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        ./scripts/build.sh
+        sh "./scripts/build.sh"
       }
     }
 
     stage('test') {
       steps {
-        ./scripts/test.sh unit
+        sh "./scripts/test.sh unit"
       }
     }
 
     stage('deploy-staging') {
       steps {
-        ./scripts/deploy.sh staging
+        sh "./scripts/deploy.sh staging"
       }
     }
 
     stage('test-staging') {
       steps {
-        ./scripts/test.sh staging
+        sh "./scripts/test.sh staging"
       }
     }
 
     stage('deploy-production') {
       steps {
-        ./scripts/deploy.sh production
+        sh "./scripts/deploy.sh production"
       }
     }
 
     stage('test-production') {
       steps {
-        ./scripts/test.sh production
+        sh "./scripts/test.sh production"
       }
     }
 
     stage('notify') {
       steps {
-        ./scripts/notify.sh
+        sh "./scripts/notify.sh"
       }
     }
   }
