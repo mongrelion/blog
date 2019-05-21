@@ -19,6 +19,8 @@ image: site
 		-t $(NAME)  \
 		.
 
+dist: image latest push push-latest
+
 push:
 	@echo "-> pusing container image $(NAME) to dockerhub"
 	@docker push $(NAME)
