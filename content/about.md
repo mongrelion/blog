@@ -42,9 +42,10 @@ experience with the following stacks:
 I also have plenty of experience with the HashiStack (Nomad, Vault, Packer) and specially with Terraform
 for which I have developed a couple of custom providers.
 
-I currently work at Container Solutions, a premium software consultancy that focuses on
-programmable infrastructure. We use our expertise in software development, as well as leadership,
-strategy and operations to help our customers innovate at speed and scale. We maintain offices
-in The Netherlands, the United Kingdom and Switzerland.
+I work as an indepentent consultant focusing on programmable infrastructure and cultural transformations.
+I use my expertise in software development, as well as leadership,
+strategy and operations to help my customers innovate at speed and scale.  
+I'm based in The Netherlands, covering all the EMEA region and for the right project I am willing to travel
+to the United States regularly.
 
-For inquires please get in touch with us at info [ a T ] container-solutions.com
+For inquires please get in touch with me at mail [ a T ] carlosleon.info
