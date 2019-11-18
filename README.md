@@ -35,3 +35,12 @@ $ make dev
 
 will delete any previous version of the `public/` folder, generate the website
 and run a test server on port `80`.
+
+# Deploying
+
+The following task will create a new image, push it to DockerHUB and then
+deploy it to production:
+
+```
+$ make dist
+```

@@ -20,6 +20,7 @@ image: site
 		.
 
 dist: image latest push push-latest
+	@./scripts/deploy.sh
 
 push:
 	@echo "-> pusing container image $(NAME) to dockerhub"
