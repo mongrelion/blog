@@ -39,7 +39,7 @@ login:
 	@docker login -u=$(DOCKER_USER) -p=$(DOCKER_PASS)
 
 test:
-	@docker run --rm -it -p 80:80 $(NAME)
+	@docker run --rm -it -p 1313:1313 -v ${PWD}:/usr/share/hugo mongrelion/hugo:0.20.1 server --bind 0.0.0.0
 
 clean:
 	@rm -rf public/
