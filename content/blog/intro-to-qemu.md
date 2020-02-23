@@ -52,6 +52,7 @@ $ qemu-system-x86_64 -m 1G -drive file=the-image.img,format=raw -boot d -cdrom a
 
 Looking into the argumets passed to qemu, we see that
 - We are assigning 1GB of RAM to the VM via the parameter `-m 1G`
+
 - We are specifying the base disk via the `-drive` parameter. The documentation
   shows in their example to simply pass the `-hda` parameter followed by the image
   name but in my case resulted in a warning saying the following:
@@ -61,11 +62,12 @@ Looking into the argumets passed to qemu, we see that
            Specify the 'raw' format explicitly to remove the restrictions.
   ```
   And it's better to tackle warnings head-on.
+
 - The `-boot d` option tells the virual machine to boot from the cdrom
-  (floppy (a), hard disk (c), CD-ROM (d), network (n))
+  (`floppy (a), hard disk (c), CD-ROM (d), network (n)`)
+
 - Finally, the `-cdrom` option tricks the virtual machine into thinking that
   `archlinux.iso` is the cdrom mounted in the system
-
 
 That would be the end of it, actually. The networking part we can skip and qemu
 will by default assing a vNIC to the machine, bridged to the host and give it
