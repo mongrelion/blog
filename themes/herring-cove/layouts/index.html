@@ -2,7 +2,7 @@
 <div id="article">
   <h1>{{ .Title }}</h1>
   <ul class="posts">
-    {{ range where .Data.Pages "Section" "blog" }}
+    {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
     <li>
       <span>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="time pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>

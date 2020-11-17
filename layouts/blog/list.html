@@ -2,7 +2,7 @@
 <div id="article">
   <h1>Blog</h1>
   <hr />
-  {{ range .Data.Pages.GroupByDate "2006" }}
+  {{ range .Pages.GroupByDate "2006" }}
   <h4 class="year-group">{{ .Key }}</h4>
   <ul class="posts">
     {{ range .Pages }}
