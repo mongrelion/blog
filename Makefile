@@ -6,12 +6,7 @@ LATEST := $(IMAGE):latest
 dev: clean site image test
 
 site:
-	@echo "-> building site with Hugo"
-	@docker run                \
-		--rm                     \
-		-it                      \
-		-v $$PWD:/usr/share/hugo \
-		mongrelion/hugo:0.20.1
+	./scripts/build.sh
 
 image: site
 	@echo "-> building container image $(NAME)"
