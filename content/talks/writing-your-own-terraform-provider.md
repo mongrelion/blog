@@ -17,4 +17,5 @@ own Terraform provider.
 
   - HashiCorp User Group Amsterdam, The Netherlands
 
-{{< speakerdeck 211bcec64e7044d99e23f33481a8d59f >}}
+### Slides
+The slides can be found [here](https://speakerdeck.com/mongrelion/writing-your-own-terraform-provider).

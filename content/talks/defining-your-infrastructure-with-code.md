@@ -12,4 +12,5 @@ title = "Defining your infrastructure with code"
 
   - HashiCorp User Group Amsterdam, The Netherlands
 
-{{< speakerdeck 94ee117bbf234c0d8ff08ff6c0c6fdba >}}
+### Slides
+The slides can be found [here](https://speakerdeck.com/mongrelion/defining-your-infrastructure-with-code).

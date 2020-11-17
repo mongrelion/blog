@@ -16,7 +16,8 @@ que hay en el mercado ([Kubernetes], [Mesos], [Docker Swarm] y [Nomad]).
 
   - ScaleConfCo 2017, Medellín, Colombia
 
-{{< speakerdeck e64238ece2c24369b1750fef92812a04 >}}
+### Slides
+The slides can be found [here](https://speakerdeck.com/mongrelion/introduccion-a-los-schedulers-scaleconfco-2017).
 
 [Kubernetes]: https://kubernetes.io
 [Mesos]: https://mesos.apache.org

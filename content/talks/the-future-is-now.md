@@ -14,7 +14,7 @@ from the past, the present and the future.
   - DevOps Pro Moscow 2017
 
 ### Slides
-{{< speakerdeck b1d44bcd90c2479db2582afd6d66cc99 >}}
+The slides can be found [here](https://speakerdeck.com/mongrelion/the-future-is-now-join-the-devops-revolution).
 
 
 ### Videos

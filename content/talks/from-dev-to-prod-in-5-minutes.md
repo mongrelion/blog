@@ -24,7 +24,7 @@ and a few other tips so that they don't panic.
   - DevOps Vilnius 2017
 
 ### Slides
-{{< speakerdeck f024be5e898b44dd83f99afd6fb8a6c3 >}}
+The slides can be found [here](https://speakerdeck.com/mongrelion/from-dev-to-prod-in-5-minutes-is-your-company-ready-asas-2017).
 
 ### Videos
 * [QCon London 2017](https://www.infoq.com/presentations/embracing-containers)

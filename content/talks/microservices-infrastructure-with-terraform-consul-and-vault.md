@@ -20,7 +20,7 @@ In this talk I explain the product we built and how it all glues together.
 {{< youtube XsOt2MAAm3g >}}
 
 ### Slides
-{{< speakerdeck 4dc40e2d342e414ab290067d992aed2d >}}
+The slides can be found [here](https://speakerdeck.com/mongrelion/microservices-infrastructure-with-terraform-consul-and-vault).
 
 [Terraform]: https://terraform.io
 [Consul]: https://consul.io
