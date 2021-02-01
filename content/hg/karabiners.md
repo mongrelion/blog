@@ -33,7 +33,10 @@ stupid, that he should quit the sport, etc.
 Thank you Andras for sharing this important lesson with all of us.
 
 # How often people change their karabiners?
-http://forum.hanggliding.org/viewtopic.php?t=35276
+[This thread](http://forum.hanggliding.org/viewtopic.php?t=35276) on the
+Hang Gliding Forums asked that question and even though the amount of participants
+was underwhelming (57 in total), a total of 44 people said that they never change
+their karabiners!
 
 # Passive Safety
 Whatever your gear has to offer that requires zero input from your during
@@ -59,7 +62,7 @@ and hang from it, it shouldn't break.
 The term used for knowing how much a karabiner can take before it breaks is called
 **breaking strain** (although in Physics the correct term is [Ultimate tensile strength](https://en.wikipedia.org/wiki/Ultimate_tensile_strength)).
 and is measured in Newtons. A karabiner that breaks under a load of 85Kg (my hook-in weight)
-has a breaking strain of 85kN (kiloNewtons).
+has a breaking strain of 0.85kN (kiloNewtons).
 
 But taking off with such a small breaking strain rating is rather scary, taking into
 consideration that most of our flying happens in turbulent conditions in which the
@@ -101,18 +104,30 @@ What I can see though is that there are three materials in place: aluminium, sta
 steel and titanal, an alloy made of aluminium that promises better material
 performance.
 
-What matters to us in order to make a decision between which material to choose is
-the material fatigue. There is plenty to be said about this and I have no authority
-to talk about it, so I am just going to refer you to the [white paper written by
+# Steel vs others
+André van der Lingen, Mechanical Engineer, hang glider pilot and sail glider pilot
+says:
+
+> Steel is very predictable in fatigue.
+> When the repetitive force does not exceed say 50% of the Ultimate Strength
+> (breaking point) of the material, it doesn't matter how much cycles it is
+> subjected to, it will never break. This limit is called the fatigue limit and
+> is not influenced by numbers of cycles. Aluminium behaves way different and
+> has a so called s/n curve. Aluminum could hold up to 70% of it's Ultima Strength
+> at 10.000 cycles but might drop to only 30% at 1.000.000 cycles. There's no
+> limit and it totally depends on the number of cycles. You should know exactly
+> how much you will load an aluminium carabiner when you want to use it for free
+> flight.
+
+Another important piece of information can be found on the [white paper written by
 Dipl. Ing. Thomas Finsterwalder](https://finsterwalder-charly.de/en/risk-of-material-fatigue-in-air-sports-carabiners.html)
 on _Risk of material fatigue in air sports carabiners with conventional snap gate_.
 
-An important read that I encourage you to go through but to summarize it, our
-inherent problem in free flying is that these karabiners are normally made for
-static loading (imagine a climber just hanging from it) while we are constantly
-adding dynamic loading to it because of the fly that we fly in. This has a very
-critical impact on the overall performance of the material and the breaking strain
-of the karabiner.
+To summarize it, our inherent problem in free flying is that these karabiners are
+normally made for static loading (imagine a climber just hanging from it) while
+we are constantly adding dynamic loading to it because of the fly that we fly in.
+This has a very critical impact on the overall performance of the material and
+the breaking strain of the karabiner.
 
 Asking a bunch of friends and reading on the hang gliding forums I found out that
 the material that performs better under dynamic loading is Stainless Steel.
