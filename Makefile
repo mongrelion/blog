@@ -3,7 +3,8 @@ TAG    := $$(git log -1 --pretty=%H)
 NAME   := $(IMAGE):$(TAG)
 LATEST := $(IMAGE):latest
 
-dev: clean site image test
+dev:
+	@hugo server
 
 site:
 	./scripts/build.sh
