@@ -5,11 +5,5 @@ language: bash
 git:
   depth: 1
 
-services:
-  - docker
-
 script:
-  - make login
-  - make site
-  - make image latest TAG=$TRAVIS_COMMIT
-  - make push push-latest TAG=$TRAVIS_COMMIT
+  - ./scripts/build.sh

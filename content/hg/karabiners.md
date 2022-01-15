@@ -119,6 +119,11 @@ says:
 > how much you will load an aluminium carabiner when you want to use it for free
 > flight.
 
+There are two reads that I would really recommend you go through to understand
+better how different materials affect the performance of a carabiner.
+
+AustriAlpin has a nice summary [here](https://www.austrialpin.at/en/service/knowledgebase/air-sports-carabiners/).
+
 Another important piece of information can be found on the [white paper written by
 Dipl. Ing. Thomas Finsterwalder](https://finsterwalder-charly.de/en/risk-of-material-fatigue-in-air-sports-carabiners.html)
 on _Risk of material fatigue in air sports carabiners with conventional snap gate_.
@@ -179,6 +184,6 @@ Special thanks to my friends Fran Ruiz and Andre van der Lingen for their input.
 [7]: https://finsterwalder-charly.de/en/finsterwalder-karabiners/quick-out-karabiner.html
 [8]: https://blackz.fr/en/quick-links-en/3973-square-maillon-rapide-en.html
 [9]: https://blackz.fr/en/quick-links-en/223-trapezium-quick-link-en.html
-[10]: https://www.austrialpin.at/produkte/karabiner/detail/fp25b-y-stratus-slide-autolock/
-[11]: https://www.austrialpin.at/produkte/karabiner/detail/fp25i-stratus-inox-slide-autolock/
+[10]: https://www.austrialpin.at/en/products/carabiners/detail/fp25b-y-stratus-slide-autolock/
+[11]: https://www.austrialpin.at/en/products/carabiners/detail/fp25i-stratus-inox-slide-autolock/
 [12]: https://www.austrialpin.at/produkte/karabiner/detail/fp10a-powerfly-slide-autolock/
